@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 22:24:40
+ * @version $Id$
+ */
+*{ margin:0; padding:0; font-family:"Microsoft yahei",serif;}
+  li{ list-style-type: none;}
+  #box{
+      position: relative;
+      width: 100%;
+      height: 440px;
+      margin: auto;
+      padding-top: 80px;
+  }
+  #box .header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 375px;
+    height: 45px;
+    background: #09c;
+    line-height: 45px;
+    font-size:20px;
+    color: #fff;
+    z-index: 1000;
+  }
+  #box .header .title{
+    text-align: center;
+  }
+  #box h2{
+      background: #09c;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      font-size: 26px;
+      text-align: center;
+  }
+  #box ul li{
+      overflow: hidden;
+      position: relative;
+      height: 42px;
+      margin:23px 0;
+      transition: height .3s;
+  }
+  #box ul li.wrong{
+      height: 62px;
+  }
+  #box ul li.right{
+      height: 42px;
+  }
+  #box ul li input{
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 220px;
+      height: 40px;
+      text-indent: 15px;
+      border: 1px solid #ccc;
+      outline: none;
+      margin: 0 auto;
+  }
+  #box ul li input:focus{
+      border: 1px solid pink;
+  }
+  #box ul li.wrong input{
+      border-color: red;
+  }
+  #box ul li.right input{
+      border-color: #00ae00;
+  }
+  #box ul li p.tip{
+      overflow: hidden;
+      height: 20px;
+      line-height: 20px;
+      color: #fb0021;
+      margin-left: 75px;
+      font-size: 12px;
+  }
+  #box ul li p.pass{
+      display: none;
+      position: absolute;
+      right: 45px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      background: #4bba68;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bolder;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px #000;
+  }
+  #box ul li.right p.pass{
+      display: block;
+  }
+  #tip{
+      position: absolute;
+      z-index: 0;
+      top: 40%;
+      left: 50%;
+      margin-left: -75px;
+      margin-top: -20px;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      background: #000000;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: bolder;
+      opacity: 0;
+      transition: opacity .3s,top .3s;
+  }
+  #tip.show{
+      z-index: 99;
+      opacity: 1;
+      top: 50%;
+  }
+  #sub{
+      display: block;
+      width: 220px;
+      height: 40px;
+      background: #09c;
+      outline: none;
+      border:none;
+      margin: 10px auto 0;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bolder;
+      line-height: 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #000;
+      cursor: pointer;
+  }
+  .alertTip{
+	display:none;
+	position:fixed;
+	top:45%;
+	left:50%;
+	z-index:9999;
+	width: 200px;
+	margin-left:-110px;
+	height:45px;
+	background: red;
+	color:#fff;
+	padding:5px 10px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	overflow: hidden;
+}

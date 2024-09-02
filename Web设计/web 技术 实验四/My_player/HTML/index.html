@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>italas 的小世界</title>
+        <link rel="stylesheet" href="../CSS/index.css">
+
+    </head>
+
+    <body background="black">
+
+        <audio src="../mp3/打上花火.mp3" id="audio-source"></audio>
+
+        <!-- 状态栏 -->
+        <section class="state_information">
+            <div class="playlists-group">
+                <div>
+                    <a href="./index.html"><img src="../image/Home.jpg" alt="主页" class="icon_left"></a>
+                </div>
+    
+                <div>
+                    <a href="./my_player.html"><img src="../image/music.png" alt="音乐" class="icon_middle"></a>
+                </div>
+    
+                <div>
+                    <a href="./list.html"><img src="../image/list.jpg" alt="列表" class="icon_right"></a>
+                </div>
+            </div>   
+        </section>
+        
+
+        <!-- 更多资讯 -->
+        <div class="carousel">
+            <img src="../image/Believe in you.png" alt="" class="active">
+            <img src="../image/DEJA VU.jpeg" alt="">
+            <img src="../image/only my railgun.jpg" alt="">
+            <img src="../image/Stay Alive.jpg" alt="">
+            <img src="../image/STYX HELIX.jpg" alt="">
+            <img src="../image/团子大家族.jpg" alt="">
+            <img src="../image/想要变得可爱.jpg" alt="">
+            <img src="../image/打上花火.jpg" alt="">
+        </div>
+
+
+        <!-- 更多榜单 -->
+        <section class="more_kind">
+            <h2 class="section_kind">更多榜单</h2>
+            <div class="playlists-group">
+                <div>
+                    <img src="../image/Believe in you.png" alt="Re0:从零开始的异世界生活" class="music_card">
+                    <p class="music_card_text">Re0:从零开始的异世界生活</p>
+                </div>
+    
+                <div>
+                    <img src="../image/想要变得可爱.jpg" alt="声之形" class="music_card">
+                    <p class="music_card_text">声之形</p>
+                </div>
+    
+                <div>
+                    <img src="../image/only my railgun.jpg" alt="某科学的超电磁炮" class="music_card">
+                    <p class="music_card_text">某科学的超电磁炮</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 为你推荐 -->
+        <section class="share_for_you">
+            <h2 class="section_kind">为你推荐</h2>
+            <div class="playlists-group">
+                <div>
+                    <img src="../image/Stay Alive.jpg" alt="Re0:从零开始的异世界生活" class="music_card">
+                    <p class="music_card_text">Re0:从零开始的异世界生活</p>
+                </div>
+    
+                <div>
+                    <img src="../image/团子大家族.jpg" alt="团子大家族" class="music_card">
+                    <p class="music_card_text">团子大家族</p>
+                </div>
+    
+                <div>
+                    <img src="../image/打上花火.jpg" alt="打上花火" class="music_card">
+                    <p class="music_card_text">打上花火</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 为你 -->
+        <section class="for_music">
+            <div>
+                <input type="range" class="music-seek-bar" value="0">
+                <p class="current-time">00 : 00</p>
+                <p class="duration">00 : 00</p>
+            </div>
+        </section>
+
+
+
+        <section class="music-player-section">
+            <p class="current-song-name">打上花火</p>
+
+            <div class="music-img rotation suspended">
+                <div class="hover_img">
+                    
+                </div>
+            </div>
+            
+            
+            <div class="controls">
+                <div class="music-button" id="prev">
+                </div>
+                <div class="music-button play" id="play">
+                </div>
+                <div class="music-button " id="next">
+                </div>
+                <div class="music-button " id="vol">
+                </div>
+                <div class="vol-control">
+                    <input type="range" class="current_vol" max="1" value="1" step="0.1">
+                </div>  
+            </div>
+    </section>
+   
+    </body>
+    <script src="../JS/data.js"></script>
+    <script src="../JS/all.js"></script>
+</html>

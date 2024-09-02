@@ -1,0 +1,163 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="images/x-icon" href="images/title.ico">
+<title>头像上传</title>
+<link href="css/common.css" rel="stylesheet">
+    <link href="css/portrait.css" rel="stylesheet">
+    <link href="css/iconfont.css" rel="stylesheet">
+    <script src="js/adaptation.js"></script>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+	       <span style="position:absolute;left:10px;" onclick='window.location.href="./information.html"'><i class="iconfont icon-fanhui1" style="font-size:20px;"></i></span>
+	       <p class="title">头像上传</p>
+	    </div>
+		<div class="box">
+			<div class="pic">
+				<p>
+					<img alt="" src="" id="head_img">
+				</p>
+			</div>
+			<div class="btn">
+				<div class="up_btn">
+					<input type="file" id="file" />
+					<label for="file">选择图片</label>
+				</div>
+				<button class="confirm" onclick="confirm()">确认头像</button>
+			</div>
+		</div>
+		<div class="alertTip">上传失败，请稍后再试</div>
+		<div class="alert">
+	      	<p class="text">怎么不登录就进来了呢，赶快去登录，乖😊～～～</p>
+	      	<p class="btn" onclick="window.location.href='./login.html'">去登录</p>
+        </div>
+	</div>
+	<script type="text/javascript">
+		var input = document.getElementById("file"); 
+		var img = document.getElementById("head_img");
+		var baseData = "";
+		if(typeof FileReader==='undefined'){ 
+		     // "抱歉，你的浏览器不支持 FileReader"; 
+		     input.setAttribute('disabled','disabled'); 
+		}else{
+		     input.addEventListener('change',readFile,false); 
+		}
+		function readFile () {
+			var file = this.files[0];
+			if (!/image\/\w+/.test(file.type)) { // 判断是否是图片 只允许图片上传
+				$(".alertTip").text("文件必须为图片！");
+	  			  $(".alertTip").show(function(){
+	  				  setTimeout(function(){
+	  					$(".alertTip").hide();
+	  				  },2000);
+	  			})
+		        return false; 
+			}
+			/* var blob = new Blob([file]); // 把文件转换成blob对象
+			var url = window.URL.createObjectURL(blob); // 通过url从内存中读取url
+			img.src = url; */
+			var reader = new FileReader();
+			reader.readAsDataURL(file);
+			reader.onload = function (e) {
+				baseData = this.result.split(',')[1];
+				console.log(this.result);
+				img.src = this.result;
+			}
+		}
+		// 获取用户信息
+		getUserInfo();
+		function getUserInfo () {
+			var userName = getCookie("userName");
+			if (!userName) {
+				$(".alert").show("slow");
+			}
+			console.log("初始化:"+userName);
+			if (userName) {
+				$.ajax({
+					"async": false,
+					"url": "/music/getUserInfo",
+					"data": {"userName":userName},
+					"type": "POST",
+					"dataType": "json",
+					"success": function (data) {
+						console.log(img);
+						img.src = data.portrait;
+					},
+					"error":function(xhr, status, errMsg){
+			            console.log("错误:"+errMsg);
+			        }
+				})
+			}
+		}
+		// 上传图片到服务器
+		function confirm () {
+			var url = img.src;
+			var userName = getCookie("userName");
+			$.ajax({
+				"async": false,
+				"url": "/music/uploadPortrait",
+				"data": {"head_imgurl": baseData,"userName":userName},
+				"type": "POST",
+				"success": function (data) {
+					if (data == "true") {
+						console.log(data);
+						// 同步修改歌曲评论里的头像
+						// updateCommentPortrait(userName);
+						window.location.href = "./index.html";
+					} else {
+						// alert("上传失败，请稍后再试");
+						$(".alertTip").text("上传失败，请稍后再试");
+			  			  $(".alertTip").show(function(){
+			  				  setTimeout(function(){
+			  					$(".alertTip").hide();
+			  				  },2000);
+			  			})
+					}
+					console.log(data);
+				},
+				"error":function(xhr, status, errMsg){
+		            console.log("错误:"+errMsg);
+		        }
+			})
+		}
+		// 修改评论头像
+		/* function updateCommentPortrait() {
+			$.ajax({
+  				"async": false,
+  				"url": "${pageContext.request.contextPath }/updateCommentPortrait",
+  				"data": {"portrait":portrait,"uid":uid},
+  				"type": "POST",
+  				"success": function (data) {
+  					console.log("返回数据：",data);
+  				},
+  				"error":function(xhr, status, errMsg){
+  		            console.log("错误:"+errMsg);
+  		        }
+  			})
+		} */
+		// 获取cookie
+		function getCookie(key){
+			var cookie = document.cookie;
+			var reg = new RegExp("(\\s|^)"+key+"=([^;]*)(;|$)");
+			var s = cookie.match(reg);
+			return s?s[2]:"";
+		}
+	</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

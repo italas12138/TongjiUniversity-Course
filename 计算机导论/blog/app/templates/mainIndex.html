@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="icon" href="../static/favicon.ico">
+	<title>同济之家</title>
+	<meta name="description" content="Tongji">
+	<meta name="keywords" content="Tongji,School Life,HTML,CSS,JavaScript">
+	<meta name="author" content="刁扶瑶，李元特，史君宝，张启翔">
+	<!--
+	<meta http-equiv="refresh" content="30">
+	上述功能为每30s刷新一下页面
+	-->
+
+	<link rel="stylesheet" type="text/css" href="../static/css/index.text.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/index.cat.css">
+
+	
+
+	<!-- <audio autoplay="autoplay" loop="loop">
+		<source src="../Audio/bgMusic.mp3">
+	</audio> -->
+
+	<style>
+		.img {
+			width: 100px;
+			height: 72px;
+			background-image: url("../static/image/mainIndex/cat.gif");
+			background-size: cover;
+			position: absolute;
+			z-index: 20;
+		}
+	</style>
+
+</head>
+
+<body style="width:1500px;height:1100px;overflow-x:hidden;">
+
+	<div class="back-to-top cd-top faa-float animated cd-is-visible" style="top: -90px;"></div>
+
+	<div class="main-nav">
+		<div class="logo">
+			<a href="#">
+				<img src="../static/image/mainIndex/TongJiLogo.png" alt="TongJiLogo.png">
+			</a>
+			<a href="#">
+				<span>同济の家</span>
+			</a>
+		</div>
+		<ul>
+			<li><a href="../templates/mainIndex.html"
+					target="_blank">首页</a></li>
+			<li><a href="#">校园生活</a></li>
+			<li><a href="../templates/web.html">云游同济</a></li>
+			<li><a href="../templates/about_us.html">关于我们</a></li>
+			<li><a href="../templates/show.html">个人博客</a></li>
+			<div class="nav_box"></div>
+		</ul>
+	</div>
+
+	<div class="img">
+		<img src="../static/image/mainIndex/cat.gif">
+	</div>
+	<div class="page1">
+		<div class="toppic">
+			<img src="../static/image/mainIndex/cartoon1.jpg">
+		</div>
+		<div class="word">
+			<span> 同济生活指南</span>
+		</div>
+		<div class="pic1">
+			<img src="../static/image/mainIndex/cartoon2.jpg">
+		</div>
+		<div class="pic2">
+			<img src="../static/image/mainIndex/cartoon3.jpg">
+		</div>
+		<div class="pic3">
+			<img src="../static/image/mainIndex/cartoon4.jpg">
+		</div>
+		<div class="pic4">
+			<img src="../static/image/mainIndex/tongji.jpg">
+		</div>
+		<div class="pic5">
+			<img src="../static/image/mainIndex/health.png">
+		</div>
+		<div class="pic6">
+			<img src="../static/image/mainIndex/study.png">
+		</div>
+		<div class="pic7">
+			<img src="../static/image/mainIndex/victor.png">
+		</div>
+	</div>
+
+	<div>
+		<footer class="footer">
+			  <div class="row">
+				<span class="footer-logo"><img src="../static/image/aboutus/FootLogo.png" alt="footerlogo.png" /></div>
+				<span class="footer-copyright">
+				  <p>Copyright © 2022 Tongji</p>
+				</div>
+			  </div>
+		  </footer>
+	</div>
+
+
+	<!-- 引入js库 -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+	<!-- typeit -->
+
+	<script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
+
+	<script src="../static/js/su.js"></script>
+
+	<script>
+		let img = document.querySelector('.img')
+		// 定义小图片的旋转角度
+		let deg = 0
+		// 定义小图片位于网页左侧的位置
+		let imgx = 0
+		// 定义小图片位于网页顶部的位置
+		let imgy = 0
+		// 定义小图片x轴的位置
+		let imgl = 0
+		// 定义小图片y轴的位置
+		let imgt = 0
+		// 定义小图片翻转的角度
+		let y = 0
+		// 定义一个计数器
+		let index = 0
+
+		window.addEventListener('mousemove', function (xyz) {
+			imgx = window.pageXOffset + xyz.x - img.offsetLeft - img.clientWidth / 2
+			imgy = window.pageYOffset + xyz.y - img.offsetTop - img.clientHeight / 2
+			// 套入公式，定义图片的旋转角度
+			deg = 360 * Math.atan(imgy / imgx) / (2 * Math.PI)
+			// 每当鼠标移动的时候重置index
+			index = 0
+			// 定义当前鼠标的位置
+			let x = event.clientX
+			// 当鼠标的x轴大于图片的时候，提普安就要对着鼠标，所以需要将图片翻转过来
+			// 否则就不用翻转
+			if (img.offsetLeft < x) {
+				y = -180
+			} else {
+				y = 0
+			}
+		})
+		setInterval(() => {
+			// 设置小图片的旋转和翻转
+			img.style.transform = "rotateZ(" + deg + "deg) rotateY(" + y + "deg)"
+			index++
+			// 在这里设置小图片的位置和速度，并判断小图片到达鼠标位置时停止移动
+			if (index < 30) {
+				imgl += imgx / 30
+				imgt += imgy / 30
+			}
+			img.style.left = imgl + 'px'
+			img.style.top = imgt + 'px'
+		}, 10)
+	</script>
+
+
+	<script>
+			(function () {
+				new WOW().init()
+			})()
+	</script>
+
+	<script type="text/javascript" src="../static/js/gotop.js"></script>
+
+</body>
+
+</html>

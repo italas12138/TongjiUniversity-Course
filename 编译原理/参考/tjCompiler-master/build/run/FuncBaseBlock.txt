@@ -1,0 +1,72 @@
+[demo]
+demo:
+    (get,_,_,a)
+    (+,a,2,T5)
+    (=,T5,_,a)
+    (*,a,2,T6)
+    (return,T6,_,_)
+    next1 = -1
+    next2 = -1
+
+[main]
+main:
+    (=,3,_,a)
+    (=,4,_,b)
+    (=,2,_,c)
+    (para,c,_,_)
+    (call,demo,_,_)
+    next1 = 1
+    next2 = -1
+Label6:
+    (=,@RETURN,_,T7)
+    (para,a,_,_)
+    (para,b,_,_)
+    (para,T7,_,_)
+    (call,program,_,_)
+    next1 = 2
+    next2 = -1
+Label7:
+    (=,@RETURN,_,T8)
+    (=,T8,_,a)
+    (return,_,_,_)
+    next1 = -1
+    next2 = -1
+
+[program]
+program:
+    (get,_,_,a)
+    (get,_,_,b)
+    (get,_,_,c)
+    (=,0,_,i)
+    (+,b,c,T0)
+    (j<=,a,T0,Label2)
+    next1 = 1
+    next2 = 2
+Label1:
+    (*,b,c,T1)
+    (+,T1,1,T2)
+    (+,a,T2,T3)
+    (=,T3,_,j)
+    (j,_,_,Label3)
+    next1 = 3
+    next2 = -1
+Label2:
+    (=,a,_,j)
+    next1 = 3
+    next2 = -1
+Label3:
+    (j>,i,100,Label5)
+    next1 = 4
+    next2 = 5
+Label4:
+    (*,j,2,T4)
+    (=,T4,_,i)
+    (=,i,_,j)
+    (j,_,_,Label3)
+    next1 = 3
+    next2 = -1
+Label5:
+    (return,i,_,_)
+    next1 = -1
+    next2 = -1
+

@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2018-02-10 11:10:28
+ * @version $Id$
+ */
+*{margin:0;padding: 0;}
+ul{list-style: none;}
+html,body{
+  width: 375px;
+  height:100%;
+  margin: auto;
+  background: url("../images/bg4.jpg") no-repeat repeat;
+  background-size: 100% 100%;
+}
+a{
+  text-decoration: none;
+}
+#main{
+  width: 375px;
+  overflow: hidden;
+}
+.top{
+  width: 355px;
+  height: 30px;
+  padding: 10px;
+}
+.top .musicMenu{
+  position: relative;
+  float: left;
+}
+.top .musicMenu > span{
+  display: block;
+  width: 30px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border:1px solid #fff;
+  line-height: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+} 
+.top .musicMenu .menu{
+  display: none;
+  position: absolute;
+  top:30px;
+  left: 0;
+  z-index:9999;
+  width: 180px;
+  max-height: 300px;
+  overflow: auto;
+  background: rgba(255,255,255,0.3);
+  border:1px solid #ddd;
+}
+.top .musicMenu .menu:before{
+  position: absolute;
+  top:-17px;
+  left:10px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border:8px solid transparent;
+  border-bottom-color:rgba(255,255,255,0.3);
+}
+.top .musicMenu .menu > p{
+  width: 100%;
+  height: 30px;
+  border-bottom:1px solid #ddd;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+}
+.top .musicMenu .menu > p:last-child{
+  border:none;
+}
+.top .musicMenu .menu p > span{
+  float: left;
+  display: inline-block;
+  width: 100px;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.top .musicMenu .menu p > i{
+  float: right;
+  display: inline-block;
+  color:red;
+  padding: 0 5px;
+  font-style: normal;
+  cursor: pointer;
+}
+.top .search{
+  float: left;
+  width: 248px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border:1px solid #fff;
+  overflow: hidden;
+}
+.top .search input{
+  display: block;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  border:none;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  text-indent: 1em;
+}
+.top .search .search_list{
+  display: none;
+  position: absolute;
+  top:40px;
+  height: 300px;
+  z-index:9999;
+  border:1px solid #eee;
+  background:#945757;
+  overflow: auto;
+}
+.top .search .search_list > li{
+  width: 230px;
+  height: 30px;
+  padding: 0 10px;
+  color:#fff;
+  line-height: 30px;  
+  border-bottom:1px dotted #eee;
+  cursor: pointer;
+}
+.top .search .search_list > li > span{
+  float:left;
+  width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.top .search .search_list > li > i{
+  display: block;
+  font-style: normal;
+  float: right;
+  width: 80px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: right;
+}
+.top .hostory{
+  position: relative;
+  float: left;
+}
+.top .hostory > span{
+  display: block;
+  width: 30px;
+  height: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border:1px solid #fff;
+  line-height: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+} 
+.top .hostory .his_menu{
+  display: none;
+  position: absolute;
+  top:30px;
+  right: 0;
+  z-index:9999;
+  width: 180px;
+  max-height: 300px;
+  overflow: auto;
+  border:1px solid #ddd;
+  background: rgba(255,255,255,0.3);
+}
+.top .hostory .his_menu:before{
+  position: absolute;
+  top:-17px;
+  right:10px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border:8px solid transparent;
+  border-bottom-color:rgba(255,255,255,0.3);
+}
+.top .hostory .his_menu > p{
+  width: 100%;
+  height: 30px;
+  border-bottom:1px solid #ddd;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+}
+.top .hostory .his_menu > p:last-child{
+  border:none;
+}
+.top .hostory .his_menu p > span{
+  float: left;
+  display: inline-block;
+  width: 100px;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.top .hostory .his_menu p > i{
+  float: right;
+  display: inline-block;
+  font-style: normal;
+  color:red;
+  padding: 0 5px 0 0;
+  cursor: pointer;
+}
+.content{
+  position: relative;
+}
+.content .load{
+  display: block;
+  position: absolute;
+  top:60px;
+  left:32px;
+  z-index: 100;
+  width: 300px;
+  height: 300px;
+}
+.content .tit{
+  width: 375px;
+}
+.content .tit .title{
+  width: 100px;
+  height: 25px;
+  margin:auto;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  line-height: 25px;
+}
+.content .tit .singer{
+  width: 375px;
+  height: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  line-height: 25px;
+}
+/*.content .pic{
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 10px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content .pic .cirimg{
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content .pic .album{
+  display: block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.content .pic .album > img{
+  display: block;
+  width: 128px;
+  height:128px;
+  margin: auto;
+}
+.content .pic.rotate{
+  animation: rot 5s linear infinite;
+}*/
+.content .pic{
+  width: 190px;
+  height: 190px;
+  margin: 10px auto;
+  background: url("../images/beirBg.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.content .pic .album{
+  display: block;
+  width: 130px;
+  height: 130px;
+  background: url("../images/ssjs.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+.content .pic.rotate{
+  animation: rot 5s linear infinite;
+}
+@keyframes rot{
+  from{transform: rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+.content .lyric{
+  position: relative;
+  width: 375px;
+  height: 210px;
+  padding: 5px 0;
+  overflow: hidden;
+}
+.content .lyric .lyc_list{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 375px;
+  z-index: 10;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.content .lyric .audioMap{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 220px;
+}
+.content .lyric .audioMap #myCanvas{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+.content .lyric .lyc_list p{
+  width: 100%;
+  height:25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  color:#fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.function_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 355px;
+  height: 25px;
+  margin: 10px auto 0;
+}
+.foot{
+  /*margin-top: 10px;*/
+  width: 355px;
+}
+.foot .time{
+  width: 355px;
+  height: 20px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+.foot .curTime{
+  display: inline-block;
+  width: 45px;
+  color:#fff;
+  text-align: center;
+}
+.foot .progress_bar{
+  position: relative;
+  display: inline-block;
+  width: 255px;
+  height: 2px;
+  background: #fff;
+  vertical-align: middle;
+}
+.foot .progress{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 0px;
+  height: 2px;
+  background: green;
+}
+.foot .progress:after{
+  position: absolute;
+  top:-3px;
+  right:-8px;
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius:50%;
+}
+.foot .allTime{
+  display: inline-block;
+  width: 45px;
+  color:#fff;
+  text-align: center;
+}
+.foot .control{
+  width: 375px;
+  height: 50px;
+  margin-top: 10px;
+}
+.foot .control > div{
+  float: left;
+  width: 20%;
+  height:50px;
+  cursor: pointer;
+}
+.foot .control .pattern{
+  background:url("../images/rand3.png") no-repeat center center;
+}
+.foot .control .prev{
+  background:url("../images/pre.png") no-repeat center center;
+}
+.foot .control .play{
+  background:url("../images/play.png") no-repeat center center;
+}
+.foot .control .next{
+  background:url("../images/next.png") no-repeat center center;
+}
+.foot .control .volume{
+  position: relative;
+  z-index:110;
+  background:url("../images/v1.png") no-repeat center center;
+}
+.foot .control .volume .range{
+  display: none;
+  position: absolute;
+  left:-20px;
+  bottom:80px;
+  width: 120px;
+  height:40px;
+  background-color: rgb(143,146,152);
+  z-index:100;
+  transform: rotate(-90deg);
+}

@@ -1,0 +1,13 @@
+int a;
+int b;
+void demo(void)
+{
+int a;
+return 0;
+}
+int main(void)
+{
+a = 0;
+demo();
+return 0;
+}

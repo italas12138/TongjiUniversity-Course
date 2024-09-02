@@ -1,0 +1,59 @@
+S -> P
+P -> N declare_block
+value_expression -> sub_expression
+value_expression -> sub_expression > sub_expression
+value_expression -> sub_expression < sub_expression
+value_expression -> sub_expression == sub_expression
+value_expression -> sub_expression >= sub_expression
+value_expression -> sub_expression <= sub_expression
+value_expression -> sub_expression != sub_expression
+sub_expression -> subsub_expression
+sub_expression -> subsub_expression + sub_expression
+sub_expression -> subsub_expression - sub_expression
+subsub_expression -> value
+subsub_expression -> value * subsub_expression
+subsub_expression -> value / subsub_expression
+value -> NUM
+value -> ( value_expression )
+value -> ID ( argument_list )
+value -> ID 
+argument_list -> 
+argument_list -> value_expression
+argument_list -> value_expression , argument_list
+declare_block -> declare_expression declare_block
+declare_block -> declare_expression
+declare_expression -> int ID M L declare_fun
+declare_expression -> int ID declare_var
+declare_expression -> void ID M L declare_fun
+declare_var -> ;
+declare_fun -> ( fun_parameter ) sentence_block
+fun_parameter -> parameter_list
+fun_parameter -> void
+parameter_list -> param
+parameter_list -> param , parameter_list
+param -> int ID
+sentence_block -> { partial_declare sentence_list }
+partial_declare -> 
+partial_declare -> partial_declare_var ; partial_declare
+partial_declare_var -> int ID extend
+sentence_list -> sentence M sentence_list
+sentence_list -> sentence
+sentence -> if_sentence
+sentence -> while_sentence
+sentence -> return_sentence
+sentence -> assign_sentence
+assign_sentence -> ID = value_expression ;
+return_sentence -> return ;
+return_sentence -> return value_expression ;
+while_sentence -> while M ( value_expression ) L sentence_block
+if_sentence -> if ( value_expression ) L sentence_block
+if_sentence -> if ( value_expression ) L sentence_block N else M L sentence_block
+L -> 
+M ->
+N ->
+extend -> = value
+extend -> 
+sentence -> fun_sentence
+fun_sentence -> ID ( argument_list ) ;
+declare_var -> = value ;
+fun_parameter -> 

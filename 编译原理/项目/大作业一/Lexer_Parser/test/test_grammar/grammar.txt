@@ -1,0 +1,60 @@
+program -> dec_list
+dec_list -> dec
+dec_list -> dec dec_list
+dec -> int id dec_type
+dec -> void id func_dec
+dec_type -> var_dec
+dec_type -> func_dec
+var_dec -> ;
+func_dec -> ( params ) stat_block
+params -> param_list
+params -> void
+param_list -> param pre_param
+pre_param ->
+pre_param -> , param pre_param
+param -> int id
+stat_block -> { in_dec stat_str }
+in_dec ->
+in_dec -> in_var_dec ; in_dec
+in_var_dec -> int id
+stat_str -> stat
+stat_str -> stat stat_str
+stat -> if_stat
+stat -> while_stat
+stat -> return_stat
+stat -> assign_stat
+stat -> id func_type ;
+assign_stat -> id = expr ;
+return_stat -> return ;
+return_stat -> return expr ;
+while_stat -> while ( expr ) stat_block
+if_stat -> if ( expr ) stat_block
+if_stat -> if ( expr ) stat_block else stat_block
+expr -> add_expr comp_add_expr
+comp_add_expr ->
+comp_add_expr -> comp_operator add_expr comp_add_expr
+comp_operator -> <
+comp_operator -> <=
+comp_operator -> >
+comp_operator -> >=
+comp_operator -> ==
+comp_operator -> !=
+add_expr -> term pre_term
+pre_term ->
+pre_term -> + term pre_term
+pre_term -> - term pre_term
+term -> factor pre_factor
+pre_factor ->
+pre_factor -> * factor pre_factor
+pre_factor -> / factor pre_factor
+factor -> num
+factor -> ( expr )
+factor -> id func_type
+func_type ->
+func_type -> call
+call -> ( argus )
+argus ->
+argus -> argu_list
+argu_list -> expr pre_expr
+pre_expr ->
+pre_expr -> , expr pre_expr

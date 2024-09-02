@@ -1,0 +1,6 @@
+#include<iostream>
+int main()
+{
+    int a;
+    for(int b = 3 ; b < 4 ; b+= 1)
+}

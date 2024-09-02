@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 21:40:26
+ * @version $Id$
+ */
+ .main{
+ 	background: #fff;
+ }
+ .main .header{
+  position: fixed;
+  top:0;
+  width: 375px;
+  height: 45px;
+  background: #09c;
+  /*background: #5C5CFF;*/
+  line-height: 45px;
+  font-size:20px;
+  color: #fff;
+  z-index: 1000;
+}
+.main .header .title{
+  text-align: center;
+}
+.box{
+	width: 100%;
+	height: auto;
+	padding:45px 0 30px;
+	margin: auto;
+}
+.box > ul{
+	width: 100%;
+}
+.box > ul > li{
+	width: 100%;
+	height:40px;
+	overflow:hidden;
+	border-bottom: 1px solid #ccc;
+}
+.box > ul > li.show{
+	width: 100%;
+	height:auto;
+	overflow:hidden;
+	background: #eee;
+}
+.box > ul > li > h4{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	background: #65a0c0;
+	color: #5b305d;
+	cursor:pointer;
+}
+.bottom_bar{
+	position: fixed;
+	bottom: 0;
+	width: 375px;
+	height:30px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	line-height30px;
+	background: #ccc;
+	color:#09c;
+}
+
+
+
+
+

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 21:40:26
+ * @version $Id$
+ */
+html,body{
+  width: 100%;
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.main{
+  position:relative;
+  width: 375px;
+  height: 100%;
+  margin:auto;
+  background: url("../images/bg6.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.red{
+  color: red !important;
+}
+
+.alert{
+	display:none;
+	position:fixed;
+	top:40%;
+	left:50%;
+	z-index:9999;
+	margin-left:-130px;
+	width: 220px;
+	height: auto;
+	padding: 20px;
+	background: #ccc;
+	border-radius: 10px;
+}
+.alert > p.text{
+	text-align:center;
+	margin:auto;
+	line-height: 25px;
+}
+.alert > p.btn{
+	width:80px;
+	height:40px;
+	background: #09c;
+	text-align:center;
+	line-height:40px;
+	margin:15px auto 0;
+	color:#fff;
+	border-radius: 5px;	
+}

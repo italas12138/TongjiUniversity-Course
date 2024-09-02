@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>摸鱼工具 | 音乐播放器 | 海拥</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+
+		<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a9430a37066911650e26adadcc42798a";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script></head>
+	<body>
+		<audio src="" id="audio-source"></audio>
+		<!-- home section -->
+		<section class="home-section active">
+			<!-- carousel -->
+			<div class="carousel">
+				<img src="assets/images/1.png" class="active" alt="">
+				<img src="assets/images/6.png" alt="">
+				<img src="assets/images/10.png" alt="">
+				<img src="assets/images/11.png" alt="">
+				<img src="assets/images/12.png" alt="">
+				
+			</div>
+			<h1 class="heading">最近播放</h1>
+				<div class="playlists-group">
+					<div class="playlist-card">
+						<img src="assets/images/2.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">华语热歌</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/3.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">古风戏腔</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/4.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">深夜酒吧</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/5.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">失恋回忆</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/6.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">经典老歌</p>
+					</div>
+				</div>
+				<h1 class="heading">根据你的喜好</h1>
+				<div class="playlists-group">
+					<div class="playlist-card">
+						<img src="assets/images/7.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">失恋回忆</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/8.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">经典老歌</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/9.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">猜你想听</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/10.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">失恋回忆</p>
+					</div>
+					<div class="playlist-card">
+						<img src="assets/images/1.png" class="playlist-card-img" alt="">
+						<p class="playlist-card-name">经典老歌</p>
+					</div>
+				</div>
+			</section>
+			<section class="music-player-section">
+
+				<img src="assets/images/back.png" class="back-btn icon hide" alt="">
+				<img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+				<h1 class="current-song-name">song 1</h1>
+
+				<p class="artist-name hide">artist 1</p>
+				<img src="assets/images/1.png" class="cover hide" alt="">
+
+				<div class="seek-bar-container">
+					<input type="range" class="music-seek-bar" value="0">
+					<p class="current-time hide">00 : 00</p>
+					<p class="duration hide">00 : 00</p>
+				</div>
+
+				<div class="controls">
+					<span class="fas fa-redo"></span>
+					<div class="main">
+						<i class="fas fa-backward active"></i>
+						<i class="fas fa-play active"></i>
+						<i class="fas fa-pause"></i>
+						<i class="fas fa-forward active"></i>
+					</div>
+					<input type="range" class="volume-slider" max="1" value="1" step="0.1">
+					<span class="fas fa-volume-up"></span>
+				</div>
+			</section>
+			
+			<section class="playlist">
+				<img src="assets/images/back.png" class="back-btn icon" alt="">
+				<h1 class="title">播放列表</h1>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/1.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 1</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/2.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 2</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/3.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 3</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/4.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 4</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/5.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 5</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/6.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 6</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/7.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 7</p>
+				</div>
+				<div class="queue active">
+					<div class="queue-cover">
+						<img src="assets/images/8.png" alt="">
+						<i class="fas fa-pause"></i>
+					</div>
+					<p class="name">song 8</p>
+				</div>
+			</section>
+		<script src="data.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
+
+	

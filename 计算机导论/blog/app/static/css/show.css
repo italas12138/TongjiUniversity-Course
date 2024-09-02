@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body {
+    /*100%窗口高度*/
+    height: 100vh;
+    /* 弹性布局，居中显示*/ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*渐变背景*/
+    background-color: white;
+    /*溢出隐藏*/
+    overflow: hidden;
+}
+.container2{
+    position:relative;
+    top:100px;
+    width: 100px;
+    height: 100px;
+}
+.button img{
+    width:25%;
+}
+.button{
+    position:absolute;
+    left:-220px;
+    top:24px;
+}
+.word{
+    position:absolute;
+    top:80px;
+    left:-260px;
+}
+@font-face {
+    font-family: span;
+    src: url("../font/SpanFont.ttf");
+}
+body .word span{
+    font: 60 13px span;
+    letter-spacing: 10px;
+    color:black;
+}
+.word :hover{
+	cursor: pointer; 
+}
+.button:hover{
+    cursor: pointer; 
+    transform:translateY(-10px);
+}
+.container{
+    top:340px;
+    left:360px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    /*相对定位*/
+    position:relative;
+    flex-direction: column;
+}
+.container .stu1{
+    left:-800px;
+    position: absolute;
+}
+.stu1 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu2{
+    left:-700px;
+    position: absolute;
+}
+.stu2 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu3{
+    left:-590px;
+    position: absolute;
+}
+.stu3 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu4{
+    left:-490px;
+    position: absolute;
+}
+.stu4 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu5{
+    left:-380px;
+    position: absolute;
+}
+.stu5 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu6{
+    left:-270px;
+    position: absolute;
+}
+.stu6 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu7{
+    left:-160px;
+    position: absolute;
+}
+.stu7 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu8{
+    left:-40px;
+    position: absolute;
+}
+.stu8 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu9{
+    left:60px;
+    position: absolute;
+}
+.stu9 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu10{
+    left:160px;
+    position: absolute;
+}
+.stu10 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu11{
+    left:260px;
+    position: absolute;
+}
+.stu11 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu12{
+    left:360px;
+    position: absolute;
+}
+.stu12 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu13{
+    left:460px;
+    position: absolute;
+}
+.stu13 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+.container .stu14{
+    left:575px;
+    position: absolute;
+}
+.stu14 :hover{
+	cursor: pointer; 
+    transform: translateY(-20px);
+}
+@font-face {
+    font-family: kukuheiti;
+    src: url("../font/ZCOOL_KuHei_Regular.ttf");
+}
+.title p {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    /* margin-top: 300px; */
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px 0;
+    color: rgb(0, 0, 0);
+    font-size: 200px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+    text-align: center;
+    font:250 55px kukuheiti;
+}

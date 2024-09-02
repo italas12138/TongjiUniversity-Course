@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<link rel="icon" href="./favicon.ico">
+	<title>同济之家</title>
+	<meta name="description" content="Tongji">
+	<meta name="keywords" content="Tongji,School Life,HTML,CSS,JavaScript">
+	<meta name="author" content="刁扶瑶，李元特，史君宝，张启翔">
+	<!--
+	<meta http-equiv="refresh" content="30">
+	上述功能为每30s刷新一下页面
+	-->
+
+	<link rel="stylesheet" type="text/css" href="./css/text.css">
+	<link rel="stylesheet" type="text/css" href="./css/szgotop.css" />
+
+	<audio autoplay="autoplay" loop="loop">
+		<source src="./Audio/bgMusic.mp3">
+	</audio>
+
+</head>
+
+<body style="height:1500px;">
+	<div class="title">
+		<img src="./Pic/bg.gif" alt="bgGif">
+		<p id="Headline"></p>
+	</div>
+
+	<div class="back_to_top cd-top faa-float animated cd-is-visible" style="top: -90px;"></div>
+
+	<div class="page1">
+		<img src="./Pic/bg2.png">
+
+	</div>
+
+	<div class="main_nav">
+		<div class="logo">
+			<a href="#">
+				<img src="TongJiLogo.png" alt="TongJiLogo.png">
+			</a>
+			<a href="#">
+				<span>同济の家</span>
+			</a>
+		</div>
+		<ul>
+			<li><a href="http://www.baidu.com" target="_blank">关于我们</a></li>
+			<li><a href="#">校园生活</a></li>
+			<li><a href="#">相关网站</a></li>
+			<li><a href="#">校园论坛</a></li>
+			<li><a href="#">登陆</a></li>
+			<div class="nav_box"></div>
+		</ul>
+	</div>
+
+
+
+
+	<!-- 引入js库 -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+	<script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
+	<script src="./js/talk.js"></script>
+	<!-- typeit -->
+
+
+
+	<script src="./js/su.js"></script>
+
+
+	<script>
+		(function () {
+			new WOW().init()
+		})()
+	</script>
+
+	<!-- 花瓣特效 -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$('body').wpSuperSnow({
+				flakes: ['./Pic/petal_1.png',
+					'./Pic/petal_2.png',
+					'./Pic/petal_3.png',
+					'./Pic/petal_1.png'
+				],
+				totalFlakes: '100',
+				zIndex: '999999',
+				maxSize: '30',
+				maxDuration: '20',
+				useFlakeTrans: false
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="./js/gotop.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+#include <iostream>
+int main()
+{
+    int a; int b2b; int i ; int j;int b;
+    char c;
+    string str;
+    scanf(a)
+    scanf(c)
+    scanf(str)
+    printf(a)
+    printf(c)
+    printf(str)
+    for(i = -3 ; i<0 ; i +=1)
+    {
+        j = 1 ;
+        for( ;  j <= 1  &&  j != 2   ;  j +=  2)
+        {
+                scanf(b)
+	while(b2b != 0 && a != 0)
+	do{
+		a = (a/a) - (a+a) * (a-a) - a ;
+		b2b=  b2b <<  1 ;
+	}
+                printf(a)
+	a = a|1;
+        }
+        printf(b2b)
+    }
+    printf(a)
+    printf(b)  
+    printf(c)  
+    b = b& 1;
+    b = 2;
+    while(b != 0)
+    do{
+         scanf(a)
+         if(a != 0)
+         then 
+        {
+	if(a == c || a>= b ||  a< b ||  (a+b)> ( b - 4 ) /b * 3   && a != b)
+	 then a += 1 * 2 - b/1 ;
+	 else a -= ( 1 + 1)  - ( b * 1 );
+
+	a *= 0;
+	b /= 2;
+        }
+        else
+        {
+               for(i = 1 ; i<= 4 ; i+=1)
+	    a += ( a  * b )  - ( b >> 2 );
+	a -=  (a + 1 )   << 1;
+	printf(a)
+         }
+         b = b - 1 ;
+    }
+    printf(a)
+    printf(b)
+    printf(c)
+    printf(str)
+}

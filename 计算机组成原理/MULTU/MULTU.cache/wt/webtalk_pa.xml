@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Mar 28 23:40:43 2023">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="cf38820addaa440a9264a9457eafa189" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="5" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="ShowPropertyEditor" value="1" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+<property name="SimulationClose" value="13" type="JavaHandler"/>
+<property name="SimulationRun" value="35" type="JavaHandler"/>
+<property name="SimulationStep" value="6" type="JavaHandler"/>
+<property name="ToolsOptions" value="3" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="MULTU.v, 102, 211" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 106, 170" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 126, 106" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 128, 102" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 131, 331" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 131, 92" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 133, 119" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 148, 235" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 154, 105" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 161, 114" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 166, 105" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 195, 108" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 206, 99" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 21, 143" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 216, 114" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 240, 320" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 245, 265" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 284, 242" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 292, 269" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 295, 262" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 297, 246" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 297, 266" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 298, 152" value="1" type="GuiResourceData"/>
+<property name="MULTU.v, 299, 237" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 126, 140" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 129, 136" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 142, 134" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 143, 139" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 144, 144" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 146, 150" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 165, 57" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 171, 119" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 19, 158" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 202, 88" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 288, 243" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 344, 157" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 355, 163" value="2" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 367, 274" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 370, 209" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 371, 271" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 374, 262" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 377, 264" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 381, 143" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 384, 155" value="2" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 402, 267" value="1" type="GuiResourceData"/>
+<property name="MULTU_tb.v, 56, 42" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, MULTU (MULTU.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, MULTU_tb (MULTU_tb.v" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="80" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="50" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

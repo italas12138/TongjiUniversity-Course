@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 21:37:18
+ * @version $Id$
+ */
+.header{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 375px;
+  height: 45px;
+  background: #09c;
+  line-height: 45px;
+  font-size:20px;
+  color: #fff;
+  z-index: 1000;
+  opacity: 0.9;
+}
+.title{
+  text-align: center;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 80%;
+  height: 40%;
+  margin: 0 auto 150px;
+  padding-top:150px; 
+}
+.form > input{
+  width: 80%;
+  height: 40px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ddd;
+  line-height: 40px;
+  text-indent: 1em;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.form > p{
+  width: 80%;
+  height: 40px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  border-radius: 3px;
+  outline: none;
+  line-height: 40px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.form > p > input{
+  width:45%;
+  height:90%;
+  background: #09c;
+  border-radius:5px;
+  color: #fff;
+  font-size:16px;
+  border:none;
+  outline: none;
+  opacity: 0.9;
+  text-indent: 0;
+}
+.alertTip{
+	display:none;
+	position:fixed;
+	top:20%;
+	left:50%;
+	width: 250px;
+	margin-left:-135px;
+	height:45px;
+	background: red;
+	color:#fff;
+	padding:5px 10px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	overflow: hidden;
+}

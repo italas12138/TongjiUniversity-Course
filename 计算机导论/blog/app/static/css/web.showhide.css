@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#showhide {
+    background: white;
+    color: white;
+    width: 680px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 32%;
+    padding: 5px;
+    padding-left: 45px;
+    font-size: 20px;
+    height: auto;
+    font-family: "微软雅黑";
+}
+
+.slide {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    border-top: solid 4px gray;
+    margin: 0 auto;
+}
+
+.change-slide {
+    background: gray;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding: 10px 10px 0 0;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}

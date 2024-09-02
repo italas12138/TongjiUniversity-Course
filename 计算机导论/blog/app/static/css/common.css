@@ -1,0 +1,63 @@
+/* 修饰1-*.html和2-*.html */
+/* 全局设置项 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 主要内容 */
+.main-content {
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: fit-content;
+    height: 550px;
+}
+
+/* 展示图片 */
+.imagestyle {
+    width: fit-content;
+    margin: 0 auto;
+
+    float: left;
+}
+
+.imagescale {
+    width: 800px;
+    height: 450px;
+}
+
+/* 介绍文字 */
+.textstyle {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    float: left;
+
+    word-break: break-all;
+
+    text-indent: 2em;
+}
+
+/* 底部导航栏 */
+.sub-buttom-nav {
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    bottom: -40px;
+    color: gray;
+}
+
+.sub-buttom-nav a {
+    text-decoration: none;
+
+    color: gray;
+}
+
+.sub-buttom-nav a:hover {
+    color: cadetblue;
+}

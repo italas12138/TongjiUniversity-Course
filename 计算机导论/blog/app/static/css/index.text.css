@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img img {
+    width: 100px;
+    height: 72px;
+    z-index: 20;
+}
+/* 小猫特效  具体参数还需要修改 */
+.back-to-top {
+    position: fixed;
+    right: 50px;
+    z-index: 99;
+    width: 70px;
+    height: 900px;
+    background: url("../image/mainIndex/scroll.png");
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* 导航栏 */
+.main-nav {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    /*一直在最上面*/
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #000;
+    backdrop-filter: blur(13px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav .logo {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url("../font/LogoFont.ttf");
+}
+
+.main-nav .logo span {
+    font: 100 22px logoFont;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.main-nav ul {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    /* right: 5%; */
+    transform: scale(1.2);
+    right: 50px;
+}
+
+
+.main-nav ul li {
+    width: 150px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: spanFont;
+    src: url("../font/SpanFont.ttf");
+}
+
+.main-nav ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-family: spanFont;
+}
+
+.main-nav ul .nav_box {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 105px;
+    height: 4px;
+    border-radius: 4px;
+    z-index: -999;
+    transition: .5s;
+}
+
+.main-nav ul li:nth-child(1):hover~.nav_box {
+    left: 0px;
+    background-color: #a18cd1;
+}
+
+.main-nav ul li:nth-child(2):hover~.nav_box {
+    left: 100px;
+    background-color: #d0a8de;
+}
+
+.main-nav ul li:nth-child(3):hover~.nav_box {
+    left: 200px;
+    background-color: #fac1ea;
+}
+
+.main-nav ul li:nth-child(4):hover~.nav_box {
+    left: 300px;
+    background-color: #fe9ca1;
+}
+
+.main-nav ul li:nth-child(5):hover~.nav_box {
+    left: 400px;
+    background-color: #fad0c9;
+}
+
+.page1{
+    background:rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 1200px;min-width: 1200px;
+    height: 1000px;
+    justify-content:center;
+}
+.toppic img{
+   left: 0px;
+   top: 0px;
+   width:100%;
+   opacity: 1;
+   position:absolute;
+}
+.word {
+   width: 100%;
+   left: 565px;
+   top: 193px;
+   position:absolute;
+}
+.word span{
+    font: 300 60px logoFont;
+    letter-spacing: 10px;
+    color:black;
+}
+.pic1{
+	width: 300px;
+	height: 300px;
+	padding: 5px 5px 5px 5px; 
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+.pic1 img{
+    width: 250px;
+    left: 200px;
+    top: 400px;
+    position:absolute;
+    border-radius: 30px;
+    float:left;
+    cursor: pointer;
+   transition: all 1s;
+    z-index: 99;
+ }
+.pic1 :hover{
+	cursor: pointer; 
+    transform: translateY(-70px);
+}
+.pic2{
+	width: 300px;
+	height: 300px;
+	padding: 5px 5px 5px 5px; 
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+.pic2 img{
+   width: 220px;
+   left: 648px;
+   top: 400px;
+   position:absolute;
+   border-radius: 30px;
+   float:left;
+   cursor: pointer;
+   transition: all 1s;
+   z-index: 99;
+}
+.pic2 :hover{
+	cursor: pointer; 
+    transform: translateY(-70px);
+}
+
+.pic3{
+	width: 300px;
+	height: 300px;
+	padding: 5px 5px 5px 5px; 
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+.pic3 img{
+   width: 220px;
+   left: 1100px;
+   top: 400px;
+   position:absolute;
+   border-radius: 30px;
+    cursor: pointer;
+   transition: all 1s;
+   z-index: 99;
+}
+.pic3 :hover{
+	cursor: pointer; 
+    transform: translateY(-70px);
+}
+.pic4 img{
+    width: 100px;
+    left: 700px;
+    top: 860px;
+    position:absolute;
+    border-radius: 30px;
+ }
+.pic5{
+	width: 150px;
+	height: 200px;
+	overflow: hidden;
+}
+.pic5 img{
+   width: 150px;
+   left: 250px;
+   top: 520px;
+   position:absolute;
+   float:left;
+   cursor: pointer;
+   transition: all 1s;
+   z-index:0;
+}
+.pic6{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.pic6 img{
+   width: 150px;
+   left: 682px;
+   top: 520px;
+   position:absolute;
+   float:left;
+   cursor: pointer;
+   transition: all 1s;
+   z-index:0;
+}
+.pic7{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.pic7 img{
+   width: 150px;
+   left: 1137px;
+   top: 520px;
+   position:absolute;
+   float:left;
+   cursor: pointer;
+   transition: all 1s;
+   z-index:0;
+}
+
+.footer-logo{
+    float:left;
+    margin-left: 10%;
+}
+
+.footer-copyright{
+    float:right;
+    margin-right: 10%;
+}

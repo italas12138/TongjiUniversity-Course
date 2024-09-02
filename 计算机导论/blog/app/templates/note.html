@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- IE以最高级 模式渲染文档 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--网页图标与标题-->
+    <link rel="icon" href="../static/image/favicon.ico">
+    <title>Diary Writing</title>
+    <link rel="stylesheet" type="text/css" href="../static/mycss.css">
+</head>
+
+
+<body>
+    <!-- 使用tinyMCE富文本 -->
+    <div class="diary-input-box">
+        <form action="/note" method="post">
+            <input class="input-area" id="input-content" name="content" value="写下你精彩无比的同济日记吧！"></input>
+            <button>上传日记</button>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript" src="../static/js/jquery-1.8.3.js"></script>
+<script src="../static/tinymce/tinymce.min.js"></script>
+<!-- 文本框中日记的输入要求 -->
+<script>
+    $(function () {
+        tinymce.init({
+            //选择class为content的标签作为编辑器
+            selector: '#input-content',
+            directionality: 'ltr',
+            language: 'zh_CN',
+            height: 500,
+            width: '100%',
+            nonbreaking_force_tab: true,
+            readonly: 1
+        });
+    })
+</script>
+
+</html>

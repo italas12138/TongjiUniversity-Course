@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Sep 25 10:54:45 2023
+# Process ID: 45592
+# Current directory: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42952 D:\桌面资料\课程作业\计算机组成原理\CPU54\CPU_MIPS_54\CPU_MIPS_54.xpr
+# Log file: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54/vivado.log
+# Journal file: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54/CPU_MIPS_54.xpr
+update_compile_order -fileset sources_1

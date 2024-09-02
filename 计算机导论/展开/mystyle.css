@@ -1,0 +1,163 @@
+.kstd-title h3 {
+    color: #0B5AA8;
+    font-size: 18px;
+    font-weight: normal
+}
+
+.kstd-title {
+    width: 111px;
+    height: 64px;
+    background: url("../images/ztbg.png") no-repeat;
+    margin-right: 10px;
+}
+
+.zkbtn {
+    font-size: 16px;
+    color: #0B5AA8;
+    background: url("../images/zkzt.png") left center no-repeat;
+    padding-left: 31px;
+    cursor: pointer
+}
+
+.sqbtn {
+    font-size: 16px;
+    color: #0B5AA8;
+    background: url("../images/sqzt.png") left center no-repeat;
+    padding-left: 31px;
+    display: none;
+    cursor: pointer
+}
+
+.sq-td {
+    display: none
+}
+
+.zksqBtn {
+    margin-top: 10px;
+}
+
+
+.td-list p a {
+    font-size: 16px;
+    color: #333333;
+    display: inline-block;
+    margin-right: 50px;
+    margin-bottom: 60px;
+    width: 70px;
+}
+
+.td-list p a.item01 {
+    background: url("Pic/iconAll.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.td-list p a.item02 {
+    background: url("Pic/iconOA.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.td-list p a.item03 {
+    background: url("Pic/iconLibrary.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.td-list p a.item04 {
+    background: url("Pic/iconCloud.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.td-list p a.item05 {
+    background: url("Pic/iconEvent.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.td-list p a.item06 {
+    background: url("Pic/iconStudy.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+@font-face {
+    font-family: yuantiFont;
+    src: url(yuantiFont.ttf);
+}
+
+a {
+    text-decoration: none;
+    font-family: yuantiFont;
+}
+
+a.item07 {
+    background: url("Pic/iconStudy.png") no-repeat left center;
+    /* 没图 */
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item08 {
+    background: url("Pic/iconNet.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item09 {
+    background: url("Pic/iconWechat.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item10 {
+    background: url("Pic/iconWeibo.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item11 {
+    background: url("Pic/iconMail.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item12 {
+    background: url("Pic/iconDy.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item13 {
+    background: url("Pic/iconKs.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item14 {
+    background: url("Pic/iconBili.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+a.item15 {
+    background: url("Pic/iconDonate.png") no-repeat left center;
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

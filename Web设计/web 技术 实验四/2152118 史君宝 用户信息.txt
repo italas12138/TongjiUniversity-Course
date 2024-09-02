@@ -1,0 +1,15 @@
+电子邮箱：
+2152118@tongji.edu.cn
+2896481966@qq.com
+
+后台用户信息：
+管理员1：
+username：italas
+password：20031018
+
+管理员2：
+username：admin
+password：20031018
+
+后台登录：
+http://127.0.0.1:8000/admin/

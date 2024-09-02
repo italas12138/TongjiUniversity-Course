@@ -1,0 +1,189 @@
+body{
+  background-color: rgb(255, 239, 245);
+}
+.container{
+  width: 500px;
+  height: 150px;
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 15px 50px grey;
+}
+.music-img{
+  transition: 1s;
+  background-image: url('http://p1.music.126.net/54wdQi_3rpjreY2oo2jb7w==/5998935441219557.jpg');
+  background-size: 120px 120px;
+  width: 120px;
+  height: 120px;
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 7%;
+  left: 9%;
+  border-radius: 50%;
+}
+
+.show-img{
+  transition: 1s;
+  top: -20%;
+}
+
+.hover-img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(360deg);}
+}
+
+.rotation{
+-webkit-transform: rotate(360deg);
+animation: rotation 5s linear infinite;
+-moz-animation: rotation 5s linear infinite;
+-webkit-animation: rotation 5s linear infinite;
+-o-animation: rotation 5s linear infinite;
+}
+
+.suspended{
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+.music-info{
+  transition: 1s;
+  width: 450px;
+  height: 100px;
+  /* border: 1px solid gray; */
+  margin: 0 auto;
+  position: absolute;
+  /* top: -50%; */
+  top: 20%;
+  left: 6%;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.7;
+  box-shadow: 1px 5px 50px grey;
+  z-index: -1;
+}
+
+.info-show{
+  transition: 1s;
+  top: -50%;
+}
+
+.music-title {
+    font-family: Microsoft YaHei UI, serif;
+    font-weight: 500;
+    position: relative;
+    left: 33%;
+    top: 10%;
+}
+
+.music-progress{
+  background-color: rgb(231, 231, 231);
+  width: 285px;
+  height: 6px;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  position: relative;
+  left: 33%;
+  top: 37%;
+}
+
+.music-played{
+  background-color: rgb(253, 109, 148);
+  width: 0px;
+  height: 6px;
+  border-radius: 5px;
+}
+
+.music-button{
+  width: 80px;
+  height: 80px;
+  /* border: 1px solid blue; */
+  border-radius: 15px;
+  position: absolute;
+  top: 22%;
+}
+#prev{
+  left: 35%;
+  background-image: url('img/prevb.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+.play{
+  transition: 0.7s;
+  left: 57%;
+  background-image: url('img/playb.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+.pause{
+  transition: 0.7s;
+  left: 57%;
+  background-image: url('img/pauseb.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+#next{
+  left: 79%;
+  background-image: url('img/nextb.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+#prev:hover{
+  transition: 1s;
+  background-color: rgb(138, 138, 138);
+  background-image: url('img/prevw.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+.play:hover{
+  transition: 0.7s;
+  background-color: rgb(138, 138, 138);
+  background-image: url('img/playw.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+.pause:hover{
+  transition: 0.7s;
+  background-color: rgb(138, 138, 138);
+  background-image: url('img/pausew.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+#next:hover{
+  transition: 0.7s;
+  background-color: rgb(138, 138, 138);
+  background-image: url('img/nextw.png');
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: center;
+}
+
+.music-progress:hover{
+  cursor: pointer;
+}

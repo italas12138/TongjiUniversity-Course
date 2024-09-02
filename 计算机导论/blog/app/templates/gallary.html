@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta content="text/html" charset="utf-8">
+    <title>gallary</title>
+
+    <link rel="stylesheet" href={{url_for('static', filename='style.css' )}}>
+</head>
+
+<body>
+    <div class="background">
+        <div class="head-title header1-background">
+            <h1>同济大学校园生活图鉴</h1>
+        </div>
+        <!-- 图片展示 -->
+        <div class="sub-title">
+            <h2>校园风光&食在同济</h2>
+        </div>
+        <div id="picLists1">
+            <ul>
+                {% for item in blogs %}
+                <li>
+                    <a href="{{ url_for('detail',id=item.b_id) }}">
+                        <img src="{{url_for('static', filename=item.img )}}" title="点击图片查看详细信息" />
+                    </a>
+                </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="buttom-nav">
+            <h4>----已经到底了哦,<a href="{{url_for('index')}}">点击此处返回主页</a>----</h4>
+        </div>
+    </div>
+</body>
+<!--js动画脚本-->
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.8.3.js' )}}"></script>
+<!-- 图片展示 -->
+<script type="text/javascript">
+    $(function () {
+        var n = 0;
+        var myLi = $('#picLists1').find('li');
+        for (var i = 0; i < myLi.length; i++) {
+            myLi.eq(i).css({ left: i * 100 + 'px' });
+        }
+        myLi.hover(function () {
+            var liIndex = $(this).index();
+            for (var j = 1; j <= liIndex; j++) {
+                myLi.eq(j).stop().animate({ left: j * 50 + 'px' }, 300);
+            }
+            for (var j = liIndex + 1; j < myLi.length; j++) {
+                myLi.eq(j).stop().animate({ left: 500 + j * 50 + 'px' }, 300);
+            }
+        }, function () {
+            for (var i = 0; i < myLi.length; i++) {
+                myLi.eq(i).stop().animate({ left: i * 100 + 'px' }, 300);
+            }
+        });
+    });
+</script>
+
+
+</html>

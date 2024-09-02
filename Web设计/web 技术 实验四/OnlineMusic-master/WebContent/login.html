@@ -1,0 +1,80 @@
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" type="images/x-icon" href="images/title.ico">
+<title>登录</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+<link href="css/iconfont.css" rel="stylesheet">
+<script src="js/adaptation.js"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+       <span style="position:absolute;left:10px;" onclick="javascript:history.back(-1);"><i class="iconfont icon-fanhui1" style="font-size:20px;"></i></span>
+       <p class="title">登录</p>
+    </div>
+    <form class="form" action="" method="post">
+      <input type="text" name="userName" placeholder="请输入用户名" />
+      <input type="password" name="passWord" placeholder="请输入密码" />
+      <p>
+      	<input type="button" value="登录" onclick="login()" /><input type="button" value="注册" onclick="window.location.href='./register.html'" />
+      </p>
+    </form>
+    <div class="alertTip"></div>
+  </div>
+  <script>
+  	  function login () {
+  		  var username = $("input[name='userName']").val();
+  		  var password = $("input[name='passWord']").val();
+  		  if (!$.trim(username) || !$.trim(password)) {
+  			  // alert("用户名和密码输入不能为空哦");
+  			  $(".alertTip").text("用户名和密码输入不能为空哦");
+  			  $(".alertTip").show(function(){
+  				  setTimeout(function(){
+  					$(".alertTip").hide();
+  				  },2000);
+  			  })
+  			  return;
+  		  }
+  		  $.ajax({
+  			  "async":false,
+			  "url":"/music/login",
+			  "data": {"username":username,"password":password},
+  			  "type": "POST",
+  		  	  "dataType": "json",
+  		  	  "success": function(data) {
+  		  		  if (data.flag) {
+  		  			  window.location.href="./index.html";
+  		  		  } else {
+  		  			  // alert("用户名或者密码错误，请重新输入");
+  		  			  $(".alertTip").text("用户名或者密码错误，请重新输入");
+  		  			  $(".alertTip").show(function(){
+  		  				  setTimeout(function(){
+  		  					$(".alertTip").hide();
+  		  				  },2000);
+  		  			  })
+  		  		  }
+  		  		  console.log(data);
+  		  	  },
+  		  	  "error":function(xhr, status, errMsg){
+	              console.log("错误:"+errMsg);
+	          }
+  		  })
+  	  }
+</script>
+</body>
+</html>
+
+
+
+
+
+

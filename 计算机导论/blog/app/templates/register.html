@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>注册</title>
+  <style>
+    h1 {
+      font-family: spanFont;
+    }
+
+    h3 {
+      font-family: spanFont;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href={{url_for('static', filename='mycss.css' )}}>
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <div class="nav">
+    <a href="{{ url_for('index') }}">首页</a>
+  </div>
+
+  <div class="container" style="padding:40px">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      {{ message }}
+    </div>
+    {% endfor %}
+    <h3>欢迎注册</h3>
+
+    <div class="regfrom">
+      <br>
+      <div>
+        <h1 align="center" style="color: rgba(0, 0, 0, 0.7); ">
+          <div><img src="../static/image/TongJiLogo.png" alt="同济logo"></div>同济の家
+        </h1>
+      </div>
+      <form method="post" action='/register'>
+        <div class="form-group">
+          <label for="usr" class="form-id form-id-name">Name:</label>
+          <input type="text" class="form-control" id="usr" name="username" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+          <label for="pwd" class="form-id">Password:</label>
+          <input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password">
+        </div>
+        <div class="form-group">
+          <label for="pwd" class="form-id">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="pic6">
+      <img src="../static/image/6.png">
+    </div>
+    <div class="pic7">
+      <img src="../static/image/7.png">
+    </div>
+    <div class="pic8">
+      <img src="../static/image/8.png">
+    </div>
+    <div class="pic12">
+      <img src="../static/image/12.png">
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Log In Form CSS  2017</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<form class="loginfrom">
+   <br>
+   <div>
+      <h1 align="center" style="color: rgba(155, 89, 182, 0.7); "><div><img src="Pic\TongJiLogo.png" alt="同济logo"></div>同济の家</h1></div>
+      <br>
+      <h1 align="center" style="color: rgba(155, 89, 182, 0.7); font-size:large;">Hello TJer</h1>
+   <div>
+      <input class="loginput"  type="text" placeholder="username" name="username" required maxlength="10">
+      <input class="loginput"  type="password" placeholder="Password"  name="密码" required maxlength="10">
+      <button class="logbutton" > 登 录</button>
+   </div>
+      <button class="logbutton" onclick="TurnToRegister()">去注册</button>
+  </div>
+</form>
+
+<form class="regfrom">
+   <br>
+   <h1 align="center" style="color: rgba(155, 89, 182, 0.7); "><div><img src="Pic\TongJiLogo.png" alt="同济logo"></div>同济の家</h1>
+   <br>
+   <h1 align="center" style="color: rgba(155, 89, 182, 0.7);font-size:large; ">welcome to join us</h1>
+   <div>
+      <input class="reginput"  type="text" placeholder="username" name="username" required maxlength="7">
+      <input class="reginput" type="password" placeholder="Password"  name="密码" required maxlength="7">
+      <input class="reginput" type="password" placeholder="Password"  name="密码" required maxlength="7">
+      <button class="regbutton" > 注 册</button>
+   </div>
+      <button class="regbutton"  onclick="TurnToLogin()">去登录</button>
+  </div>
+</form>
+<script src="css/font/login.js"></script> 
+</body>
+</html>

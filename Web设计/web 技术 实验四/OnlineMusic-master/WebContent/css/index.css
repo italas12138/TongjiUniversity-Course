@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-13 09:15:03
+ * @version $Id$
+ */
+.main{
+  /*background: #fff !important;*/
+}
+.header{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 375px;
+  height: 45px;
+  background: #09c;
+  line-height: 45px;
+  font-size:20px;
+  color: #fff;
+  z-index: 1000;
+  opacity: 0.9;
+}
+.header .title{
+  text-align: center;
+}
+.select{
+  width: 90%;
+  height: 300px;
+  margin:auto;
+  padding: 150px 0 0;
+}
+.select > ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.select > ul > li{
+  width: 70%;
+  height: 35px;
+  background: #09c;
+  opacity: 0.9;
+  border-radius: 17.5px;
+  box-shadow: 0px 0px 10px #000;
+}
+.select > ul > li > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+
+
+
+

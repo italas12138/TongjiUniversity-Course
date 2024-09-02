@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>同济の家 login</title>
+  <link rel="stylesheet" href="/static/CSS/login.css">
+</head>
+
+<body>
+<div class="loginfrom" >
+  <form action="/login/" method="POST" >
+    {% csrf_token %}
+     <br>
+      <h1 align="center" style="color: rgba(155, 89, 182, 0.7); ">
+          <div>
+              <img src="/static/image/TongJiLogo.png" alt="同济logo">
+          </div>同济の家
+      </h1>
+      <br>
+      <h1 align="center" style="color: rgba(155, 89, 182, 0.7); font-size:large;">Hello TJer</h1>
+     <div>
+  
+        <input class="loginput" type="text" placeholder="username" name="username" id="username">
+        <input class="loginput" type="password" placeholder="password" name="password" id="password">
+
+        <h3 align="center" style="color: red;">{{ tip }}</h3>
+
+        <input class="logbutton" type="submit" value="登 录">
+     </div>
+  </form>
+  <button class="logbutton"><a class="item" href="../register/">去注册</a></button>
+  
+</div>
+</body>
+</html>

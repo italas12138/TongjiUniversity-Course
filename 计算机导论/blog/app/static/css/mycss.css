@@ -1,0 +1,566 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./image/banner.jpg);
+    color: black;
+    text-align: center;
+}
+
+@font-face {
+    font-family: PermanentFont;
+    src: url(./font/PermanentMarker.ttf);
+}
+
+.header h1 {
+    font-size: 40px;
+    font-family: PermanentFont;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏超链接 */
+.nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 侧栏 */
+.side {
+    flex: 30%;
+    background-color: rgb(237, 237, 237);
+    padding: 20px;
+    z-index: 0;
+}
+
+@font-face {
+    font-family: ChewyFont;
+    src: url(../static/font/ChewyFont.ttf);
+}
+
+.input-head-sculpturs {
+    z-index: 2;
+    font-family: ChewyFont;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main h2 {
+    font-family: ChewyFont;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 20%;
+}
+
+/* 响应式布局 - 在屏幕宽度尺寸小于700px时，上下两栏堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕宽度尺寸小于400px时，导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.loginfrom {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    height: 520px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+.form-control {
+    margin-left: 105px;
+    margin-top: 10px;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(155, 89, 182, 0.7);
+    ;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.form-id,
+.form-check,
+.btn-primary {
+    margin-left: 105px;
+}
+
+.btn-info {
+    margin-left: 70px;
+}
+
+.regfrom {
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    height: 520px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+.reginput {
+    margin-left: 105px;
+    margin-top: 20px;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(155, 89, 182, 0.7);
+    ;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn-submit {
+    margin-left: 185px;
+}
+
+/* 导航栏 */
+body .main_nav {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    /*一直在最上面*/
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(13px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .main_nav .logo {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+body .main_nav .logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url("../static/font/LogoFont.ttf");
+}
+
+body .main_nav .logo span {
+    font: 100 22px logoFont;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+body .main_nav ul {
+    margin: 0px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    /* right: 5%; */
+    transform: scale(1.2);
+    right: 50px;
+}
+
+
+body .main_nav ul li {
+    width: 150px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: spanFont;
+    src: url("../static/font/SpanFont.ttf");
+}
+
+body .main_nav ul li a {
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-family: spanFont;
+}
+
+body .main_nav ul .nav_box {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 95px;
+    height: 4px;
+    border-radius: 4px;
+    z-index: -999;
+    transition: .5s;
+}
+
+body .main_nav ul li:nth-child(1):hover~.nav_box {
+    left: 35px;
+    background-color: #a18cd1;
+}
+
+body .main_nav ul li:nth-child(2):hover~.nav_box {
+    left: 130px;
+    background-color: #d0a8de;
+}
+
+body .main_nav ul li:nth-child(3):hover~.nav_box {
+    left: 220px;
+    background-color: #fac1ea;
+}
+
+body .main_nav ul li:nth-child(4):hover~.nav_box {
+    left: 320px;
+    background-color: #fe9ca1;
+}
+
+body .main_nav ul li:nth-child(5):hover~.nav_box {
+    left: 400px;
+    background-color: #fad0c9;
+}
+
+.footer-text {
+    text-align: center;
+    margin-left: 500px;
+}
+
+.footer {
+    background-color: #f9f8f8;
+    width: 100%;
+    height: 50px;
+    padding: 1%;
+}
+
+.footer-myblog {
+    float: left;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    color: #a8a8ab;
+}
+
+.footer-copyright {
+    float: right;
+    margin-right: 3%;
+    color: #a8a8ab;
+}
+
+.note li {
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.diary-input-box form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.diary-input-box button {
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: logoFont;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+.container {
+    position: relative;
+}
+
+.loginfrom {
+    position: absolute;
+    left: 32%;
+    top: 40%;
+    height: 520px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #143a52 50%, #6e828a 50%);
+}
+
+.form-control {
+    margin-left: 105px;
+    margin-top: 10px;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    font-family: spanFont;
+    color: rgba(155, 89, 182, 0.7);
+    ;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 99;
+}
+
+.form-id {
+    color: #b7b7b7;
+    ;
+    font-family: spanFont;
+}
+
+.form-id,
+.form-check,
+.btn-primary {
+    margin-left: 105px;
+}
+
+.btn-info {
+    margin-left: 70px;
+}
+
+.regfrom {
+    position: absolute;
+    left: 32%;
+    top: 40%;
+    height: 520px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(-225deg, #522546 50%, #311d3f 50%);
+}
+
+.reginput {
+    margin-left: 105px;
+    margin-top: 20px;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(5, 5, 22, 0.7);
+    ;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 9;
+}
+
+.btn-submit {
+    margin-left: 185px;
+}
+
+.pic3 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 70px;
+}
+
+.pic3 img {
+    width: 30%;
+}
+
+.pic3 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic4 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 200px;
+}
+
+.pic4 img {
+    width: 30%;
+}
+
+.pic4 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic5 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 360px;
+}
+
+.pic5 img {
+    width: 30%;
+}
+
+.pic5 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic10 {
+    z-index: 1;
+    position: absolute;
+    left: 740px;
+    top: 430px;
+}
+
+.pic10 img {
+    width: 60%;
+}
+
+.pic10 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic6 {
+    z-index: 1;
+    position: absolute;
+    left: 725px;
+    top: 400px;
+}
+
+.pic6 img {
+    width: 60%;
+}
+
+.pic6 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic7 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 100px;
+}
+
+.pic7 img {
+    width: 30%;
+}
+
+.pic7 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic8 {
+    z-index: -1;
+    position: absolute;
+    left: 250px;
+    top: 250px;
+}
+
+.pic8 img {
+    width: 30%;
+}
+
+.pic8 :hover {
+    cursor: pointer;
+    transform: translateX(-30px);
+}
+
+.pic12 {
+    z-index: -1;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+.pic12 img {
+    width: 10%;
+}
+
+.pic11 {
+    z-index: -1;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+}
+
+.pic11 img {
+    width: 10%;
+}
+
+@font-face {
+    font-family: spanFont;
+    src: url("../static/font/SpanFont.ttf");
+}
+
+/* 导航栏超链接 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-family: spanFont;
+    font-size: 22px;
+    text-decoration: none;
+}

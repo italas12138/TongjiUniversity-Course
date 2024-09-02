@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 23:41:43
+ * @version $Id$
+ */
+#main{
+  width: 375px;
+  height: 100%;
+  background: #d9f1f5;
+  margin:auto;
+  position: relative;
+  /*background-color: #fff !important;*/
+}
+.header{
+  position: fixed;
+  top:0;
+  width: 375px;
+  height: 45px;
+  background: #09c;
+  line-height: 45px;
+  font-size:20px;
+  color: #fff;
+  z-index: 1000;
+}
+.title{
+  text-align: center;
+}
+.box{
+  width: 345px;
+  margin:auto;
+  padding:55px 15px 0;
+  background: #d9f1f5;
+}
+.song{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  /* background: #fff; */
+}
+.song .pic{
+  width: 100px;
+  height: 100px;
+  background-size: 100% 100%;
+}
+.song .pic > img{
+  width: 100%;
+  height: 100%;
+}
+.song .singer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.song .singer > p{
+  height: 30px;
+  line-height: 30px;
+}
+.song .singer > p:first-child{
+  font-size: 18px;
+}
+.song .singer > p:last-child{
+  color: #688DFF;
+}
+.box .content{
+  width: 100%;
+  padding-bottom: 45px;
+  border-top:1px solid #ccc;
+  margin-top: 10px;
+}
+.box .content > p{
+  padding: 10px 0;
+  /* background: #fff; */
+  color:#09c;
+  text-align: center;
+}
+.box .content .list{
+  width: 100%;
+  /* background: #fff; */
+}
+.box .content .list > li{
+  padding-top:10px;
+}
+.box .content .list > li > p > img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.box .content .list > li > p.commentator{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content .list > li > p.commentator .user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left:10px;
+  line-height: 16px;
+}
+.content .list > li > p.commentator .fabulous{
+  position: absolute;
+  top:5px;
+  right: 0;
+  font-size: 14px;
+  color: #888;
+}
+.comment_input{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  z-index: 1000;
+  width: 100%;
+  height: 35px;
+  padding: 5px 0;
+  /*background: pink;*/
+  background: #eee;
+}
+.comment_input > form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+.comment_input > form > input[type="text"]{
+  width: 75%;
+  height:35px;
+  border:none;
+  outline: none;
+  border-radius: 3px;
+  text-indent: 1em;
+}
+.comment_input > form > input[type="button"]{
+  width: 18%;
+  height:35px;
+  background: #09c;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.alertTip{
+	position:fixed;
+	top:50%;
+	left:87px;
+	width: 200px;
+	height:0px;
+	transition:0.5s;
+	background: #000;
+	opacity: 0.8;
+	color:#fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	overflow: hidden;
+}
+i{
+	font-style: normal;
+}
+
+
+
+
+
+
+

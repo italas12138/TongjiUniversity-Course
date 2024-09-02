@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('fontello.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #e0e0e0;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.semi-bold {
+  margin: 10px;
+  font-size: 15px;
+}
+
+.resume {
+  width: 1000px;
+  height: auto;
+  margin: 50px auto;
+}
+
+
+.resume_top {
+  width: 1000px;
+  height: 400px;
+  background: #0bb5f4;
+  display: flex;
+}
+
+.resume_middle {
+  width: 1000px;
+  height: 600px;
+  background-color: #f0f2f1;
+  display: flex;
+}
+
+.resume_last{
+  width: 1000px;
+  height: 600px;
+  background: #f0f2f1;;
+  display: flex;
+}
+
+.resume_person_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.resume_top_content {
+  display: flex;
+}
+
+.resume_info{
+  width: 360px;
+  margin: 20px;
+}
+
+.resume_social{
+  width: 360px;
+  margin: 20px;
+}
+
+.data {
+  height: 50px;
+  color: black;
+}
+
+
+.resume_middle_content{
+  display: flex;
+}
+
+
+.resume_skill{
+  margin: 20px;
+  width: 260px;
+  height: 600px;
+}
+
+.resume_hobby{
+  margin: 20px;
+  width: 560px;
+  height: 600px;
+}
+
+
+
+.resume_life{
+  margin: 20px;
+  height: 150px;
+}
+
+
+.resume_project{
+  margin: 20px;
+  width: 560px;
+  height: 300px;
+}
+
+
+
+.resume_education{
+  margin: 20px;
+  width: 360px;
+  height: 300px;
+}
+
+.hobby_img{
+  margin: 20px;
+  height: 150px;
+}
+
+
+
+.skill_bar_sum {
+  height: 17px;
+  width: 150px;
+  background-color: #0bb5f4;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.skill_bar {
+  height: 17px;
+  background-color: aquamarine;
+  border-radius: 20px 0 0 20px;
+}
+
+
+.title p{
+  font-size: 20px;
+}
+
+
+.title_l {
+  position: relative;
+  border-top: 1px solid #444;
+  bottom: 5px;
+  right: -100px;
+  width: 87%;
+}
+
+li{
+  margin: 20px;
+}
+
+
+.icon-bookmark:before {
+  content: '\e802';
+  color: red;
+  font-size: 25px;
+}
+
+li::marker {
+  content: "\2708    ";
+}
+
+.exp {
+  border-left: 2px solid rgb(0, 86, 133);
+  margin-left: 15px;
+}

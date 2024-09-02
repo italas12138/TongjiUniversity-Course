@@ -1,0 +1,35 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_MIPS_54/CPU_MIPS_54.sim/sim_1/synth/timing/cpu_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM32M_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM32M_HD1
+INFO: [VRFC 10-311] analyzing module RAM32M_HD10
+INFO: [VRFC 10-311] analyzing module RAM32M_HD11
+INFO: [VRFC 10-311] analyzing module RAM32M_HD12
+INFO: [VRFC 10-311] analyzing module RAM32M_HD13
+INFO: [VRFC 10-311] analyzing module RAM32M_HD14
+INFO: [VRFC 10-311] analyzing module RAM32M_HD15
+INFO: [VRFC 10-311] analyzing module RAM32M_HD16
+INFO: [VRFC 10-311] analyzing module RAM32M_HD17
+INFO: [VRFC 10-311] analyzing module RAM32M_HD2
+INFO: [VRFC 10-311] analyzing module RAM32M_HD3
+INFO: [VRFC 10-311] analyzing module RAM32M_HD4
+INFO: [VRFC 10-311] analyzing module RAM32M_HD5
+INFO: [VRFC 10-311] analyzing module RAM32M_HD6
+INFO: [VRFC 10-311] analyzing module RAM32M_HD7
+INFO: [VRFC 10-311] analyzing module RAM32M_HD8
+INFO: [VRFC 10-311] analyzing module RAM32M_HD9
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module CP0
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-311] analyzing module DMEM
+INFO: [VRFC 10-311] analyzing module HI_LO
+INFO: [VRFC 10-311] analyzing module IMEM
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module sccomp_dataflow
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0_dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb

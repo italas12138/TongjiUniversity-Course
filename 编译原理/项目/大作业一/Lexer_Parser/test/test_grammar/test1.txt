@@ -1,0 +1,11 @@
+program -> dec_list
+dec_list -> dec
+dec_list -> dec dec_list
+dec -> int id dec_type
+dec -> void id func_dec
+dec_type -> var_dec
+dec_type -> func_dec
+var_dec -> ;
+func_dec -> ( params ) stat_block
+params -> param_list
+params -> void

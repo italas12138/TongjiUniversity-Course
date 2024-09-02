@@ -1,0 +1,132 @@
+.index_all{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 100px;
+    background-color:#e0e0e0;
+}
+
+.index_people{
+    height: 800px;
+    width: 200px;
+}
+
+.person_card{
+    background-color: rgb(245, 245, 245);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+    height: 60px;
+    display: flex;
+}
+
+.person_card:hover{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10%;
+    height: 60px;
+    display: flex;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(135deg, #E3FDF5 50%, #FFE6FA 50%);
+
+}
+
+.person_img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.person_name{
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+.index_blog{
+    margin-left: 100px;
+    width: 1000px;
+}
+
+.flex_box{
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    height: 480px;
+    flex-wrap: wrap;
+}
+
+.blog_card{
+    height: 220px;
+    width: 250px;
+    background-color: rgb(0, 255, 255);
+}
+
+.blog_img{
+    width: 230px;
+    height: 130px;
+    margin: 10px;
+    text-align: center;
+}
+
+.blog_content{
+    width: 250px;
+    height: 70px;
+    background-color: rgb(248, 248, 255);
+}
+
+.blog_title{
+    width: 250px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    text-decoration-style: solid;
+    text-align: center;
+}
+
+.blog_a{
+    font-size:medium;
+    color: black;
+}
+
+.blog_more{
+    width: 250px;
+    height: 30px;
+}
+
+.user{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+    float: left;
+    backface-visibility: hidden;
+    color: rgba(0, 0, 0, 0.68);
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration-color: rgba(0, 0, 0, 0.68);
+    -webkit-box-direction: normal;
+}
+
+.user_time{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    float: right;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.68);
+    display: block;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    -webkit-box-direction: normal;
+}
+

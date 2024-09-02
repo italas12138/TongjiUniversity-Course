@@ -1,0 +1,6 @@
+#include<iostream>
+int main()
+{
+int b;
+    a = 3;
+}

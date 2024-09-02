@@ -1,0 +1,105 @@
+/* 修饰gallery.html */
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+}
+
+/* 背景 */
+.background {
+    background-image: url(image/背景1.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.header1-background {
+    background-image: url(image/花边.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+}
+
+/* 标题样式 */
+.head-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+
+    text-align: center;
+    line-height: 200px;
+
+    color: cornflowerblue;
+}
+
+.sub-title {
+    font-family: 'Courier New', Courier, monospace;
+
+    text-align: center;
+    line-height: 100px;
+
+    color: blueviolet;
+}
+
+/* 第一部分图集 */
+#picLists1 {
+    margin-bottom: 200px;
+    border: 1px solid #000;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#picLists1 ul li {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 0;
+}
+
+/* 第二部分图集 */
+#picLists2 {
+    border: 1px solid #000;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#picLists2 ul li {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 0;
+}
+
+/* 底部导航栏 */
+.buttom-nav {
+    text-align: center;
+    line-height: 150px;
+
+    color: darkorange;
+}
+
+.buttom-nav a {
+    text-decoration: none;
+
+    color: darkorange;
+}
+
+.buttom-nav a:hover {
+    color: orange;
+}

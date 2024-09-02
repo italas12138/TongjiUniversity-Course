@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Sep 25 10:54:45 2023
+# Process ID: 45592
+# Current directory: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent42952 D:\桌面资料\课程作业\计算机组成原理\CPU54\CPU_MIPS_54\CPU_MIPS_54.xpr
+# Log file: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54/vivado.log
+# Journal file: D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54/CPU_MIPS_54.xpr
+INFO: [Project 1-313] Project file moved from 'D:/CPU_MIPS_54' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/桌面资料/课程作业/计算机组成原理/CPU54/CPU_MIPS_54/cpu_tb_behav.wcfg', nor could it be found using path 'D:/CPU_MIPS_54/cpu_tb_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 837.199 ; gain = 148.926
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 25 11:17:52 2023...

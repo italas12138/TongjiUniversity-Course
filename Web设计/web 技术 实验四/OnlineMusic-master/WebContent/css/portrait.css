@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/**
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-11 21:37:18
+ * @version $Id$
+ */
+.header{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 375px;
+  height: 45px;
+  background: #09c;
+  line-height: 45px;
+  font-size:20px;
+  color: #fff;
+  z-index: 1000;
+  opacity: 0.9;
+}
+.title{
+  text-align: center;
+}
+.box{
+	width:100%;
+	height:-moz-calc(100% - 45px);
+	height:-webkit-calc(100% - 45px);
+	height: calc(100% - 45px);
+	padding-top: 45px;
+	margin: auto;
+}
+.box .pic{
+	width:100%;
+	height:-moz-calc(100% - 60px);
+	height:-webkit-calc(100% - 60px);
+	height: calc(100% - 60px);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+.box .pic > p{
+	width:250px;
+	height: 250px;
+	background: #fff;
+	margin:auto;
+	border-radius: 50%;
+	opacity: 0.8;
+	box-shadow: 0px 0px 20px 10px #09c;
+	overflow: hidden;
+}
+.box .pic > p > img{
+	width:100%;
+	height: 100%;
+	border:none;
+}
+.box .btn{
+	width:95%;
+	height:40px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	align-items:center;
+	text-align:center;
+	margin: auto;
+}
+.box .btn .up_btn{
+	position:relative;
+	width:45%;
+	height:40px;
+}
+.box .btn .up_btn input[type="file"]{
+	width:100px;
+	border:none;
+	outline:none;
+}
+.box .btn .up_btn label{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+	background: #09c;
+	line-height: 40px;
+	color:#fff;
+	border-radius: 5px;
+}
+.box .btn .confirm{
+	width: 45%;
+	height: 100%;
+	background: #09c;
+	border:none;
+	outline: none;
+	color:#fff;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 5px;
+}
+.alertTip{
+	display:none;
+	position:fixed;
+	top:45%;
+	left:50%;
+	width: 250px;
+	margin-left:-135px;
+	height:45px;
+	background: red;
+	color:#fff;
+	padding:5px 10px;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	overflow: hidden;
+}
+
+
+
+

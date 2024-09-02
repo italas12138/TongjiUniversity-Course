@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="Grammar_Program_Textin">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>851</width>
+      <height>701</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Text_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;请在这里输入语法或程序文本&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="Text_help">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>40</y>
+      <width>391</width>
+      <height>701</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Text_label_2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>0</y>
+      <width>321</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;提示栏&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="Help_file"/>
+    <addaction name="separator"/>
+    <addaction name="Open_text"/>
+    <addaction name="Open_file"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编译</string>
+    </property>
+    <addaction name="Compiler_result"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>目标代码</string>
+    </property>
+    <addaction name="Code_result"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Lexer_error">
+   <property name="text">
+    <string>错误报告</string>
+   </property>
+  </action>
+  <action name="Lexer_result">
+   <property name="text">
+    <string>词法分析结果</string>
+   </property>
+  </action>
+  <action name="Word_error">
+   <property name="text">
+    <string>错误报告</string>
+   </property>
+  </action>
+  <action name="Word_ID">
+   <property name="text">
+    <string>标识符表</string>
+   </property>
+  </action>
+  <action name="Word_all">
+   <property name="text">
+    <string>全符号表</string>
+   </property>
+  </action>
+  <action name="getin_Grammar_byfile">
+   <property name="text">
+    <string>文件导入</string>
+   </property>
+  </action>
+  <action name="getin_Grammar_bytext">
+   <property name="text">
+    <string>文本框导入</string>
+   </property>
+  </action>
+  <action name="getin_Program_byfile">
+   <property name="text">
+    <string>文件导入</string>
+   </property>
+  </action>
+  <action name="getin_Program_bytext">
+   <property name="text">
+    <string>文本框导入</string>
+   </property>
+  </action>
+  <action name="Open_text">
+   <property name="text">
+    <string>文本框导入源程序</string>
+   </property>
+  </action>
+  <action name="Open_file">
+   <property name="text">
+    <string>文件名导入源程序</string>
+   </property>
+  </action>
+  <action name="Word_Sign">
+   <property name="text">
+    <string>运算符表</string>
+   </property>
+  </action>
+  <action name="Help_file">
+   <property name="text">
+    <string>使用说明</string>
+   </property>
+  </action>
+  <action name="Grammar_error">
+   <property name="text">
+    <string>错误报告</string>
+   </property>
+  </action>
+  <action name="Grammar_fourline">
+   <property name="text">
+    <string>四元式结果</string>
+   </property>
+  </action>
+  <action name="Compiler_result">
+   <property name="text">
+    <string>编译结果</string>
+   </property>
+  </action>
+  <action name="Code_result">
+   <property name="text">
+    <string>目标代码</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

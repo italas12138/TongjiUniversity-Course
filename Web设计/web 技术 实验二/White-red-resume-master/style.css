@@ -1,0 +1,151 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 800px;
+    border: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ @media (max-width: 600px)  {
+    .wrap {
+      width: auto;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+
+.bname {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.sname {
+    font-weight: bold;
+    color: rgba(247, 23, 61, 0.8);
+}
+
+.info {
+    padding: 5px 5px;
+    color: #888;
+    font-size: 12px;
+    font-style: italic;
+}
+ @media (max-width: 600px)  {
+    .phone,.mail,.github,.motto {
+      display:none;
+    }
+}
+.relation {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+ @media (max-width: 600px)  {
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+}
+.relation>div {
+    padding: 5px 5px;
+    font-size: 12px;
+}
+
+.motto {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.content>div {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.title .title-red {
+    color: rgb(243, 53, 53);
+}
+
+.title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.title-l {
+    position: relative;
+    border-top: 1px solid #444;
+    bottom: 5px;
+    right: -100px;
+    width: 87%;
+}
+
+.skill,
+.project {
+    padding: 5px 5px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.skill>span {
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.skill>li,
+.project>li {
+    padding: 3px 10px;
+    font-weight: 500;
+}
+
+.project>.link,
+.project>.time {
+    padding: 0 10px;
+    font-weight: 400;
+    color: rgb(218, 81, 63);
+    font-style: italic;
+}
+
+.project>.link {
+    float: right;
+}
+
+.project>.time {
+    color: #888;
+    font-style: italic;
+    text-align: right;
+}
+

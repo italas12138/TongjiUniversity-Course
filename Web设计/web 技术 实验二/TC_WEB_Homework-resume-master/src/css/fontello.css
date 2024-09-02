@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('fontello.ttf') format('truetype');
+}
+
+
+[class ^="icon-"] {
+    font-family: "fontello";
+    font-style: normal;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+}
+
+.icon-wechat:before {
+    content: '\e800';
+}
+
+.icon-qq:before {
+    content: '\e801';
+}
+
+.icon-bookmark:before {
+    content: '\e802';
+}
+
+.icon-mail-alt:before {
+    content: '\e804';
+}

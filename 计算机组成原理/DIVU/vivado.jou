@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Apr 03 21:48:40 2023
+# Process ID: 24596
+# Current directory: D:/桌面资料/计算机组成原理/DIVU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29152 D:\桌面资料\计算机组成原理\DIVU\DIVU.xpr
+# Log file: D:/桌面资料/计算机组成原理/DIVU/vivado.log
+# Journal file: D:/桌面资料/计算机组成原理/DIVU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/桌面资料/计算机组成原理/DIVU/DIVU.xpr
+update_compile_order -fileset sources_1update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

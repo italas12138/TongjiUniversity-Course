@@ -1,0 +1,36 @@
+.blog_all{
+    width: 1100px;
+    margin: auto;
+    padding-top: 100px;
+    background-color:#e0e0e0;
+}
+
+.blog_content{
+    height: 600px;
+}
+
+.blog_title{
+    text-align: center;
+}
+
+.title_text{
+    margin-left: 50px;
+    width: 1000px;
+    height: 50px;
+    font-size: medium;
+
+
+}
+
+.text{
+    margin-left: 50px;
+    width: 1000px;
+    height: 300px; 
+    font-size: medium;
+
+    
+    background: url(/static/image/background.png) repeat left top;
+    background-size: cover;
+    border:1px dotted #999666; 
+}
+

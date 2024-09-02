@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="/static/CSS/index.css">
+    <title>首页</title>
+    <title>首页</title>
+</head>
+
+<body style="background-color: rgb(245, 245, 245);">
+    <div style="min-height: 70px;" class="ui inverted fixed stackable red large menu">
+        <a class="item" href="/">My Blog</a>
+        {% if request.user.is_active %}
+        <div class="right menu">
+          <a class="item" href="/friend/">添加朋友</a>
+          <a class="item" href="/blog/">{{ request.user.username }}</a>
+          <a class="item" href="/logout/">退出</a>
+        </div>
+        {% else %}
+        <div class="right menu">
+            <a class="item" href="/register/">注册</a>
+            <a class="item" href="/login/">登陆</a>
+        </div>
+        {% endif %}
+    </div>
+
+
+    <div class="index_all">
+      <div class="index_people">
+        {% if request.user.is_active %}
+        <div class="person_card">
+          <div class="person_name">
+            <h3><a style="text-decoration: none; color: black;" href="../">{{ user.username }}</a></h3>
+          </div>
+        </div>
+        {% endif %}
+
+        {% for person in people %}
+        <div class="person_card">
+          <div class="person_name">
+            <h3><a style="text-decoration: none; color: black;" href="{{ person.friendname }}">{{ person.friendname }}</a></h3>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="index_blog">
+        <div class="flex_box">
+            {% for vlog in v_blogs %}
+            <div class="blog_card">
+              <div class="blog_img">
+                <img src="/media/{{ vlog.blog_img }}" style="height:100%" alt="">
+              </div>
+              <div class="blog_content">
+                <div class="blog_title">
+                  <a class="blog_a" href="/blog_comment/{{ vlog.id }}" style="font-size: 20px;">{{ vlog.title }}</a>
+                </div>
+  
+                <div class="blog_more">
+                  <span class="user">
+                    <i class="user icon"></i>
+                    {{ vlog.blog_creator }}
+                  </span>
+                  <span class="user_time">{{ vlog.blog_time }}</span>
+                </div>
+              </div>
+              
+            </div>
+            {% endfor %}
+        </div>
+
+        <div style="padding: 50px 0 50px 0;" class="ui vertical segment">
+          <div class="ui centered grid">
+              <div class="ui pagination menu">
+                {% if v_blogs.has_previous %}
+                  <a href="?page={{ v_blogs.previous_page_number }}" class="item">
+                      <i class="icon left arrow"></i>
+                  </a>
+                  {% else %}
+                  <a href="#" class="disabled item">
+                    <i class="icon left arrow"></i>
+                  </a>
+                  {% endif %}  
+                  {% for ls in v_blogs.paginator.page_range %}
+                  <a class="item" href="?page={{ ls }}"> 
+                    {{ ls }}
+                  </a>    
+                  {% endfor %}
+                  {% if v_blogs.has_next %}                    
+                  <a href="?page={{ v_blogs.next_page_number }}" class="item">
+                      <i class="icon right arrow"></i>
+                  </a>
+                  {% else %}
+                  <a href="#" class="disabled item">
+                    <i class="icon right arrow"></i>
+                  </a>
+                  {% endif %}
+              </div>
+          </div>
+        </div> 
+      </div>
+    </div>  
+
+
+</body>
+
+</html>

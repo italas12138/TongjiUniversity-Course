@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIVU/DIVU.srcs/sources_1/new/DIVU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIVU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIVU/DIVU.srcs/sim_1/new/DIVU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIVU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIVU/DIVU.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

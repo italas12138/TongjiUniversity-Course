@@ -1,0 +1,34 @@
+int max(int x,int y){
+    if(x>y){
+        return x;
+    }
+    else{
+        return y;
+    }
+}
+int min(int x,int y){
+    if(x<y){
+        int t;
+        t=x;
+        x=y;
+        y=t;
+    }
+    return y;
+}
+int sum(int x,int y){
+    return x+y;
+}
+int main()
+{
+    int a;
+    int b;
+    int c;
+    int d;
+    int f;
+    a=3;
+    b=4;
+    c=max(a,b);  
+    f=min(a,c,d);
+    return 0;
+}
+$

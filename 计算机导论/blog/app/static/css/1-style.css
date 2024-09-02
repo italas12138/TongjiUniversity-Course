@@ -1,0 +1,39 @@
+/* 修饰1-*.html */
+/* 标题 */
+.head-title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    text-align: center;
+    line-height: 200px;
+
+    color: cadetblue;
+}
+
+/* 背景 */
+.background {
+    background-image: url(image/背景2.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.header1-background {
+    background-image: url(image/花边.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: center;
+}
+
+.appoint {
+    text-align: right;
+    margin-top: 5px;
+
+}
+
+.appoint img {
+    width: 25px;
+    height: 25px;
+}
+
+.appoint span {
+    line-height: 25px;
+}

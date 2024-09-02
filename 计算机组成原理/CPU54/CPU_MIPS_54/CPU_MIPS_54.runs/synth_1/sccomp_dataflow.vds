@@ -1,0 +1,1026 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jul 14 19:47:10 2023
+# Process ID: 271552
+# Current directory: D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1/sccomp_dataflow.vds
+# Journal file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 129392 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 305.609 ; gain = 98.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sccomp_dataflow' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/sccomp_dataflow.v:44]
+INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/IMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1/.Xil/Vivado-271552-LAPTOP-0BFPH7CU/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (1#1) [D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1/.Xil/Vivado-271552-LAPTOP-0BFPH7CU/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IMEM' (2#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/IMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DMEM' (3#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'cpu' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/cpu.v:23]
+	Parameter ADDI bound to: 6'b000000 
+	Parameter ADDIU bound to: 6'b000001 
+	Parameter ANDI bound to: 6'b000010 
+	Parameter ORI bound to: 6'b000011 
+	Parameter SLTIU bound to: 6'b000100 
+	Parameter LUI bound to: 6'b000101 
+	Parameter XORI bound to: 6'b000110 
+	Parameter SLTI bound to: 6'b000111 
+	Parameter ADDU bound to: 6'b001000 
+	Parameter AND bound to: 6'b001001 
+	Parameter BEQ bound to: 6'b001010 
+	Parameter BNE bound to: 6'b001011 
+	Parameter J bound to: 6'b001100 
+	Parameter JAL bound to: 6'b001101 
+	Parameter JR bound to: 6'b001110 
+	Parameter LW bound to: 6'b001111 
+	Parameter XOR bound to: 6'b010000 
+	Parameter NOR bound to: 6'b010001 
+	Parameter OR bound to: 6'b010010 
+	Parameter SLL bound to: 6'b010011 
+	Parameter SLLV bound to: 6'b010100 
+	Parameter SLTU bound to: 6'b010101 
+	Parameter SRA bound to: 6'b010110 
+	Parameter SRL bound to: 6'b010111 
+	Parameter SUBU bound to: 6'b011000 
+	Parameter SW bound to: 6'b011001 
+	Parameter ADD bound to: 6'b011010 
+	Parameter SUB bound to: 6'b011011 
+	Parameter SLT bound to: 6'b011100 
+	Parameter SRLV bound to: 6'b011101 
+	Parameter SRAV bound to: 6'b011110 
+	Parameter CLZ bound to: 6'b011111 
+	Parameter DIVU bound to: 6'b100000 
+	Parameter ERET bound to: 6'b100001 
+	Parameter JALR bound to: 6'b100010 
+	Parameter LB bound to: 6'b100011 
+	Parameter LBU bound to: 6'b100100 
+	Parameter LHU bound to: 6'b100101 
+	Parameter SB bound to: 6'b100110 
+	Parameter SH bound to: 6'b100111 
+	Parameter LH bound to: 6'b101000 
+	Parameter MFC0 bound to: 6'b101001 
+	Parameter MFHI bound to: 6'b101010 
+	Parameter MFLO bound to: 6'b101011 
+	Parameter MTC0 bound to: 6'b101100 
+	Parameter MTHI bound to: 6'b101101 
+	Parameter MTLO bound to: 6'b101110 
+	Parameter MUL bound to: 6'b101111 
+	Parameter MULTU bound to: 6'b110000 
+	Parameter SYSCALL bound to: 6'b110001 
+	Parameter TEQ bound to: 6'b110010 
+	Parameter BGEZ bound to: 6'b110011 
+	Parameter BREAK bound to: 6'b110100 
+	Parameter DIV bound to: 6'b110101 
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/ALU.v:23]
+	Parameter ADDI bound to: 6'b000000 
+	Parameter ADDIU bound to: 6'b000001 
+	Parameter ANDI bound to: 6'b000010 
+	Parameter ORI bound to: 6'b000011 
+	Parameter SLTIU bound to: 6'b000100 
+	Parameter LUI bound to: 6'b000101 
+	Parameter XORI bound to: 6'b000110 
+	Parameter SLTI bound to: 6'b000111 
+	Parameter ADDU bound to: 6'b001000 
+	Parameter AND bound to: 6'b001001 
+	Parameter BEQ bound to: 6'b001010 
+	Parameter BNE bound to: 6'b001011 
+	Parameter J bound to: 6'b001100 
+	Parameter JAL bound to: 6'b001101 
+	Parameter JR bound to: 6'b001110 
+	Parameter LW bound to: 6'b001111 
+	Parameter XOR bound to: 6'b010000 
+	Parameter NOR bound to: 6'b010001 
+	Parameter OR bound to: 6'b010010 
+	Parameter SLL bound to: 6'b010011 
+	Parameter SLLV bound to: 6'b010100 
+	Parameter SLTU bound to: 6'b010101 
+	Parameter SRA bound to: 6'b010110 
+	Parameter SRL bound to: 6'b010111 
+	Parameter SUBU bound to: 6'b011000 
+	Parameter SW bound to: 6'b011001 
+	Parameter ADD bound to: 6'b011010 
+	Parameter SUB bound to: 6'b011011 
+	Parameter SLT bound to: 6'b011100 
+	Parameter SRLV bound to: 6'b011101 
+	Parameter SRAV bound to: 6'b011110 
+	Parameter CLZ bound to: 6'b011111 
+	Parameter DIVU bound to: 6'b100000 
+	Parameter ERET bound to: 6'b100001 
+	Parameter JALR bound to: 6'b100010 
+	Parameter LB bound to: 6'b100011 
+	Parameter LBU bound to: 6'b100100 
+	Parameter LHU bound to: 6'b100101 
+	Parameter SB bound to: 6'b100110 
+	Parameter SH bound to: 6'b100111 
+	Parameter LH bound to: 6'b101000 
+	Parameter MFC0 bound to: 6'b101001 
+	Parameter MFHI bound to: 6'b101010 
+	Parameter MFLO bound to: 6'b101011 
+	Parameter MTC0 bound to: 6'b101100 
+	Parameter MTHI bound to: 6'b101101 
+	Parameter MTLO bound to: 6'b101110 
+	Parameter MUL bound to: 6'b101111 
+	Parameter MULTU bound to: 6'b110000 
+	Parameter SYSCALL bound to: 6'b110001 
+	Parameter TEQ bound to: 6'b110010 
+	Parameter BGEZ bound to: 6'b110011 
+	Parameter BREAK bound to: 6'b110100 
+	Parameter DIV bound to: 6'b110101 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (4#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/PC.v:23]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register pc_reg_reg in module PC. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/PC.v:37]
+INFO: [Synth 8-256] done synthesizing module 'PC' (5#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:23]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[31] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[30] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[29] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[28] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[27] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[26] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[25] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[24] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[23] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[22] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[21] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[20] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[19] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[18] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[17] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[16] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[15] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[14] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[13] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[12] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[11] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[10] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[9] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[8] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[7] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[6] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[5] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[4] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[3] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[2] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[1] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register array_reg_reg[0] in module regfile. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:44]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'Inst_Get' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Inst_Get.v:23]
+	Parameter ADD_ena bound to: 6'b100000 
+	Parameter ADDU_ena bound to: 6'b100001 
+	Parameter SUB_ena bound to: 6'b100010 
+	Parameter SUBU_ena bound to: 6'b100011 
+	Parameter AND_ena bound to: 6'b100100 
+	Parameter OR_ena bound to: 6'b100101 
+	Parameter XOR_ena bound to: 6'b100110 
+	Parameter NOR_ena bound to: 6'b100111 
+	Parameter SLT_ena bound to: 6'b101010 
+	Parameter SLTU_ena bound to: 6'b101011 
+	Parameter SLL_ena bound to: 6'b000000 
+	Parameter SRL_ena bound to: 6'b000010 
+	Parameter SRA_ena bound to: 6'b000011 
+	Parameter SLLV_ena bound to: 6'b000100 
+	Parameter SRLV_ena bound to: 6'b000110 
+	Parameter SRAV_ena bound to: 6'b000111 
+	Parameter JR_ena bound to: 6'b001000 
+	Parameter ADDI_ena bound to: 6'b001000 
+	Parameter ADDIU_ena bound to: 6'b001001 
+	Parameter ANDI_ena bound to: 6'b001100 
+	Parameter ORI_ena bound to: 6'b001101 
+	Parameter XORI_ena bound to: 6'b001110 
+	Parameter LW_ena bound to: 6'b100011 
+	Parameter SW_ena bound to: 6'b101011 
+	Parameter BEQ_ena bound to: 6'b000100 
+	Parameter BNE_ena bound to: 6'b000101 
+	Parameter SLTI_ena bound to: 6'b001010 
+	Parameter SLTIU_ena bound to: 6'b001011 
+	Parameter LUI_ena bound to: 6'b001111 
+	Parameter J_ena bound to: 6'b000010 
+	Parameter JAL_ena bound to: 6'b000011 
+	Parameter CLZ_ena bound to: 6'b100000 
+	Parameter JALR_ena bound to: 6'b001001 
+	Parameter MTHI_ena bound to: 6'b010001 
+	Parameter MFHI_ena bound to: 6'b010000 
+	Parameter MTLO_ena bound to: 6'b010011 
+	Parameter MFLO_ena bound to: 6'b010010 
+	Parameter SB_ena bound to: 6'b101000 
+	Parameter SH_ena bound to: 6'b101001 
+	Parameter LB_ena bound to: 6'b100000 
+	Parameter LH_ena bound to: 6'b100001 
+	Parameter LBU_ena bound to: 6'b100100 
+	Parameter LHU_ena bound to: 6'b100101 
+	Parameter ERET_ena bound to: 6'b011000 
+	Parameter BREAK_ena bound to: 6'b001101 
+	Parameter SYSCALL_ena bound to: 6'b001100 
+	Parameter TEQ_ena bound to: 6'b110100 
+	Parameter MFC0_ena bound to: 5'b00000 
+	Parameter MTC0_ena bound to: 5'b00100 
+	Parameter MUL_ena bound to: 6'b000010 
+	Parameter MULTU_ena bound to: 6'b011001 
+	Parameter DIV_ena bound to: 6'b011010 
+	Parameter DIVU_ena bound to: 6'b011011 
+	Parameter BGEZ_ena bound to: 6'b000001 
+	Parameter ADDI bound to: 6'b000000 
+	Parameter ADDIU bound to: 6'b000001 
+	Parameter ANDI bound to: 6'b000010 
+	Parameter ORI bound to: 6'b000011 
+	Parameter SLTIU bound to: 6'b000100 
+	Parameter LUI bound to: 6'b000101 
+	Parameter XORI bound to: 6'b000110 
+	Parameter SLTI bound to: 6'b000111 
+	Parameter ADDU bound to: 6'b001000 
+	Parameter AND bound to: 6'b001001 
+	Parameter BEQ bound to: 6'b001010 
+	Parameter BNE bound to: 6'b001011 
+	Parameter J bound to: 6'b001100 
+	Parameter JAL bound to: 6'b001101 
+	Parameter JR bound to: 6'b001110 
+	Parameter LW bound to: 6'b001111 
+	Parameter XOR bound to: 6'b010000 
+	Parameter NOR bound to: 6'b010001 
+	Parameter OR bound to: 6'b010010 
+	Parameter SLL bound to: 6'b010011 
+	Parameter SLLV bound to: 6'b010100 
+	Parameter SLTU bound to: 6'b010101 
+	Parameter SRA bound to: 6'b010110 
+	Parameter SRL bound to: 6'b010111 
+	Parameter SUBU bound to: 6'b011000 
+	Parameter SW bound to: 6'b011001 
+	Parameter ADD bound to: 6'b011010 
+	Parameter SUB bound to: 6'b011011 
+	Parameter SLT bound to: 6'b011100 
+	Parameter SRLV bound to: 6'b011101 
+	Parameter SRAV bound to: 6'b011110 
+	Parameter CLZ bound to: 6'b011111 
+	Parameter DIVU bound to: 6'b100000 
+	Parameter ERET bound to: 6'b100001 
+	Parameter JALR bound to: 6'b100010 
+	Parameter LB bound to: 6'b100011 
+	Parameter LBU bound to: 6'b100100 
+	Parameter LHU bound to: 6'b100101 
+	Parameter SB bound to: 6'b100110 
+	Parameter SH bound to: 6'b100111 
+	Parameter LH bound to: 6'b101000 
+	Parameter MFC0 bound to: 6'b101001 
+	Parameter MFHI bound to: 6'b101010 
+	Parameter MFLO bound to: 6'b101011 
+	Parameter MTC0 bound to: 6'b101100 
+	Parameter MTHI bound to: 6'b101101 
+	Parameter MTLO bound to: 6'b101110 
+	Parameter MUL bound to: 6'b101111 
+	Parameter MULTU bound to: 6'b110000 
+	Parameter SYSCALL bound to: 6'b110001 
+	Parameter TEQ bound to: 6'b110010 
+	Parameter BGEZ bound to: 6'b110011 
+	Parameter BREAK bound to: 6'b110100 
+	Parameter DIV bound to: 6'b110101 
+INFO: [Synth 8-256] done synthesizing module 'Inst_Get' (7#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Inst_Get.v:23]
+INFO: [Synth 8-638] synthesizing module 'CP0' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:23]
+	Parameter SYSCALL bound to: 5'b01000 
+	Parameter BREAK bound to: 5'b01001 
+	Parameter TEQ bound to: 5'b01101 
+	Parameter STATUS_REG_NUM bound to: 4'b1100 
+	Parameter CAUSE_REG_NUM bound to: 4'b1101 
+	Parameter EPC_REG_NUM bound to: 4'b1110 
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[31] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[30] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[29] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[28] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[27] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[26] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[25] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[24] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[23] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[22] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[21] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[20] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[19] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[18] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[17] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[16] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[15] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[14] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[13] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[12] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[11] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[10] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[9] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[8] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[7] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[6] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[5] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[4] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[3] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[2] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[1] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register CP0_reg_reg[0] in module CP0. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'CP0' (8#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CP0.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUL' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/MUL.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUL' (9#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/MUL.v:23]
+INFO: [Synth 8-638] synthesizing module 'DIV' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/DIV.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DIV' (10#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/DIV.v:23]
+INFO: [Synth 8-638] synthesizing module 'HI_LO' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/HI_LO.v:23]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register HI_reg_reg in module HI_LO. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/HI_LO.v:42]
+INFO: [Synth 8-256] done synthesizing module 'HI_LO' (11#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/HI_LO.v:23]
+INFO: [Synth 8-638] synthesizing module 'CLZ' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CLZ.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLZ' (12#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CLZ.v:23]
+INFO: [Synth 8-638] synthesizing module 'Control' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Control.v:25]
+	Parameter ADDI bound to: 6'b000000 
+	Parameter ADDIU bound to: 6'b000001 
+	Parameter ANDI bound to: 6'b000010 
+	Parameter ORI bound to: 6'b000011 
+	Parameter SLTIU bound to: 6'b000100 
+	Parameter LUI bound to: 6'b000101 
+	Parameter XORI bound to: 6'b000110 
+	Parameter SLTI bound to: 6'b000111 
+	Parameter ADDU bound to: 6'b001000 
+	Parameter AND bound to: 6'b001001 
+	Parameter BEQ bound to: 6'b001010 
+	Parameter BNE bound to: 6'b001011 
+	Parameter J bound to: 6'b001100 
+	Parameter JAL bound to: 6'b001101 
+	Parameter JR bound to: 6'b001110 
+	Parameter LW bound to: 6'b001111 
+	Parameter XOR bound to: 6'b010000 
+	Parameter NOR bound to: 6'b010001 
+	Parameter OR bound to: 6'b010010 
+	Parameter SLL bound to: 6'b010011 
+	Parameter SLLV bound to: 6'b010100 
+	Parameter SLTU bound to: 6'b010101 
+	Parameter SRA bound to: 6'b010110 
+	Parameter SRL bound to: 6'b010111 
+	Parameter SUBU bound to: 6'b011000 
+	Parameter SW bound to: 6'b011001 
+	Parameter ADD bound to: 6'b011010 
+	Parameter SUB bound to: 6'b011011 
+	Parameter SLT bound to: 6'b011100 
+	Parameter SRLV bound to: 6'b011101 
+	Parameter SRAV bound to: 6'b011110 
+	Parameter CLZ bound to: 6'b011111 
+	Parameter DIVU bound to: 6'b100000 
+	Parameter ERET bound to: 6'b100001 
+	Parameter JALR bound to: 6'b100010 
+	Parameter LB bound to: 6'b100011 
+	Parameter LBU bound to: 6'b100100 
+	Parameter LHU bound to: 6'b100101 
+	Parameter SB bound to: 6'b100110 
+	Parameter SH bound to: 6'b100111 
+	Parameter LH bound to: 6'b101000 
+	Parameter MFC0 bound to: 6'b101001 
+	Parameter MFHI bound to: 6'b101010 
+	Parameter MFLO bound to: 6'b101011 
+	Parameter MTC0 bound to: 6'b101100 
+	Parameter MTHI bound to: 6'b101101 
+	Parameter MTLO bound to: 6'b101110 
+	Parameter MUL bound to: 6'b101111 
+	Parameter MULTU bound to: 6'b110000 
+	Parameter SYSCALL bound to: 6'b110001 
+	Parameter TEQ bound to: 6'b110010 
+	Parameter BGEZ bound to: 6'b110011 
+	Parameter BREAK bound to: 6'b110100 
+	Parameter DIV bound to: 6'b110101 
+WARNING: [Synth 8-3848] Net mux in module/entity Control does not have driver. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Control.v:51]
+WARNING: [Synth 8-3848] Net mux6_1 in module/entity Control does not have driver. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Control.v:52]
+WARNING: [Synth 8-3848] Net mux7_1 in module/entity Control does not have driver. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Control.v:53]
+INFO: [Synth 8-256] done synthesizing module 'Control' (13#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/Control.v:25]
+WARNING: [Synth 8-350] instance 'control' of module 'Control' requires 22 connections, but only 19 given [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/cpu.v:445]
+WARNING: [Synth 8-3848] Net ref_r in module/entity cpu does not have driver. [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/cpu.v:65]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (14#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/cpu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sccomp_dataflow' (15#1) [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/sccomp_dataflow.v:44]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[10]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[9]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[8]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[7]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[6]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[5]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[4]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[3]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[0]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[0]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[0]
+WARNING: [Synth 8-3331] design regfile has unconnected port ref_r
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 350.469 ; gain = 143.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 350.469 ; gain = 143.844
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'Imem/imem' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/IMEM.v:28]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1/.Xil/Vivado-271552-LAPTOP-0BFPH7CU/dcp/dist_mem_gen_0_in_context.xdc] for cell 'Imem/imem'
+Finished Parsing XDC File [D:/CPU_MIPS_54/CPU_MIPS_54.runs/synth_1/.Xil/Vivado-271552-LAPTOP-0BFPH7CU/dcp/dist_mem_gen_0_in_context.xdc] for cell 'Imem/imem'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 656.250 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Z" won't be mapped to RAM because address size (33) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_39" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_37" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_36" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_25" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/MUL.v:50]
+INFO: [Synth 8-5545] ROM "R" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Q" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cnt_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "CP0_choice1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/ALU.v:102]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_reg_reg' [D:/CPU_MIPS_54/CPU_MIPS_54.srcs/sources_1/new/CLZ.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 2     
+	  13 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 28    
+	   5 Input     32 Bit        Muxes := 1     
+	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 12    
+	  55 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  55 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 165   
+	   3 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sccomp_dataflow 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module DMEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 2     
++---XORs : 
+	   2 Input     33 Bit         XORs := 1     
++---Muxes : 
+	  13 Input     33 Bit        Muxes := 1     
+	  55 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  55 Input      1 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Inst_Get 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 75    
+Module CP0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 30    
+	   3 Input      1 Bit        Muxes := 3     
+Module MUL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 2     
+Module DIV 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module CLZ 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      6 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module cpu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   7 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 18    
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "Z" won't be mapped to RAM because address size (33) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "op_ena_13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "op_ena_12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CP0_reg_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+DSP Report: Generating DSP p_1_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+INFO: [Synth 8-5545] ROM "R" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Q" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design Control has unconnected port mux[10]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[9]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[8]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[7]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[6]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[5]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[4]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[3]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux[0]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux6_1[0]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[2]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[1]
+WARNING: [Synth 8-3331] design Control has unconnected port mux7_1[0]
+WARNING: [Synth 8-3331] design DIV has unconnected port sign_ena
+WARNING: [Synth 8-3331] design regfile has unconnected port ref_r
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 656.250 ; gain = 449.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------+-------------------+-----------+----------------------+---------------+
+|Module Name     | RTL Object        | Inference | Size (Depth x Width) | Primitives    | 
++----------------+-------------------+-----------+----------------------+---------------+
+|sccomp_dataflow | Dmem/DMEM_reg_reg | Implied   | 32 x 32              | RAM32M x 18   | 
++----------------+-------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MUL         | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUL         | (PCIN>>17)+A*B | 17     | 17     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUL         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MUL         | (PCIN>>17)+A*B | 18     | 17     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[6]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[7]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[8]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[9]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[10]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[11]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[12]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[13]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[14]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[15]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[16]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[17]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[18]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[19]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[20]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[21]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[22]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[23]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[24]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[25]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[26]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[27]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[28]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[29]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/clz/cnt_reg_reg[30]' (LD) to 'sccpu/clz/cnt_reg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sccpu/clz/\cnt_reg_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[31]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[30]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[29]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[28]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[27]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[26]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[25]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[24]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[23]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[22]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[21]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[20]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[19]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[18]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[17]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[16]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[15]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[14]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[13]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[12]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[11]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[10]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[9]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[8]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[7]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[6]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[5]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[4]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[3]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[2]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[1]) is unused and will be removed from module CLZ.
+WARNING: [Synth 8-3332] Sequential element (cnt_reg_reg[0]) is unused and will be removed from module CLZ.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 656.250 ; gain = 449.625
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 656.250 ; gain = 449.625
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 765.305 ; gain = 558.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 770.227 ; gain = 563.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 869.387 ; gain = 662.762
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     2|
+|3     |CARRY4         |   640|
+|4     |DSP48E1        |     4|
+|5     |LUT1           |   192|
+|6     |LUT2           |   668|
+|7     |LUT3           |  2272|
+|8     |LUT4           |   144|
+|9     |LUT5           |   345|
+|10    |LUT6           |  1683|
+|11    |MUXF7          |   385|
+|12    |MUXF8          |    69|
+|13    |RAM32M         |    18|
+|14    |FDCE           |    32|
+|15    |FDRE           |  2111|
+|16    |FDSE           |     1|
+|17    |LD             |    33|
+|18    |IBUF           |     2|
+|19    |OBUF           |    64|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |  8697|
+|2     |  Dmem      |DMEM    |    34|
+|3     |  Imem      |IMEM    |  1605|
+|4     |  sccpu     |cpu     |  6988|
+|5     |    alu     |ALU     |    45|
+|6     |    cp0     |CP0     |  1527|
+|7     |    cpu_ref |regfile |  2526|
+|8     |    div     |DIV     |  2685|
+|9     |    hi_lo   |HI_LO   |    65|
+|10    |    mul     |MUL     |    64|
+|11    |    pc      |PC      |    76|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 869.387 ; gain = 327.547
+Synthesis Optimization Complete : Time (s): cpu = 00:01:43 ; elapsed = 00:01:47 . Memory (MB): peak = 869.387 ; gain = 662.762
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 697 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 2162 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  LD => LDCE: 33 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 77 Warnings, 66 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:44 . Memory (MB): peak = 869.387 ; gain = 638.176
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 869.387 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 14 19:49:02 2023...

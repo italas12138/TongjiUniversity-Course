@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIV/DIV.srcs/sim_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIV/DIV.srcs/sim_1/new/DIV_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/桌面资料/计算机组成原理/DIV/DIV.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

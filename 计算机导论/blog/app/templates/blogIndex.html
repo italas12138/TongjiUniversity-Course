@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--网页图标与标题-->
+    <link rel="icon" href="../static/image/favicon.ico">
+    <title>TongJiBlog</title>
+
+    <!--设置编码格式-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap-fileinput/4.4.6/css/fileinput.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='mycss.css' )}}">
+    <script src="https://cdn.bootcss.com/bootstrap-fileinput/4.4.6/js/fileinput.min.js"></script>
+    <script src="https://qncdn.wanshifu.com/wshifu-user/js/jquery-3.2.1.min.js"></script>
+</head>
+
+
+<body>
+    <!-- 头栏 -->
+    <div class="header">
+        {% if user.islogin%}
+        <h1>{{user.username}}'s&nbsp;&nbsp;TONGJI&nbsp;&nbsp;BLOG </h1>
+        {% else %}
+        <h1 class="head-title">MY&nbsp;&nbsp;TONGJI&nbsp;&nbsp;BLOG </h1>
+        {% endif %}
+    </div>
+
+    <!-- 主导航栏 -->
+    <div class="main_nav">
+        <div class="logo">
+            <a href="#">
+                <img src="../static/image/TongJiLogo.png" alt="TongjiLogo.png">
+            </a>
+            <a href="#">
+                <span>同济の家</span>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#" target="_blank">首页</a></li>
+            <li><a href="{{ url_for('blogs') }}">同济风采</a></li>
+            <li><a href="{{ url_for('note') }}">写日记</a></li>
+            <li><a href="#">关于我们</a></li>
+            {% if user.islogin %}
+            <li><a href="{{ url_for('logout') }}" class="right">注销</a></li>
+            {% else %}
+            <li><a href="{{ url_for('login') }}" class="right">登录</a></li>
+            {% endif %}
+            <div class="nav_box"></div>
+        </ul>
+    </div>
+
+    <!-- 两栏设计 -->
+    <div class="row">
+        <!-- 侧栏 -->
+        <div class="side">
+
+            <h2 class="input-head-sculpturs">My Head Sculpture</h2>
+
+            <form class="avatar-input-form" method="POST" enctype="multipart/form-data" action="/upload">
+                <input type="file" class="file" name="file" />
+            </form>
+
+            <!-- 测试头像 -->
+            <div class=" fakeimg">
+                <img src="{{url_for('static', filename=user.pic)}}" width="250" height="250" alt="请登录后上传头像">
+            </div>
+        </div>
+
+        <!-- 主栏 -->
+        <div class="main">
+            <h2>My Personal TongJi Diary</h2>
+            <div>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这里写下你的第一篇同济日记吧~</li>
+                <ul class="note">
+                    {% if flag %}
+                    {% for item in note %}
+                    <li>{{item.content}}</li>
+                    <p id="time"></p>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <span class="footer-myblog">MY BLOG</span>
+                <span class="footer-copyright">Copyright © 2022 Tongji</span>
+            </div>
+        </div>
+
+</body>
+
+</html>
+<script src=" ../static//js/jquery-1.8.3.js"></script>
+<script src=" ../static//js/time.js"></script>
+<script src=" ../static//js/su.js"></script>
+<script>
+    $(document).ready(function () {
+        let lis = $('.note li')
+        for (let index = 0; index < lis.length; index++) {
+
+            let text = lis[index].innerText
+            console.log(text);
+            lis[index].innerHTML = text
+
+        }
+
+    });
+    //头像上传
+    let file = document.querySelector('.file')
+    let form = document.querySelector('.avatar-input-form')
+    file.addEventListener('change', function (e) {//注意，头像上传时用的时change事件
+        console.log(form);
+        form.submit()
+    })
+</script>
+
+
+<script>
+        (function () {
+            new WOW().init()
+        })()
+</script>
+
+<!-- 花瓣特效 -->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('body').wpSuperSnow({
+            flakes: ['../static/image/Snowflake.png',
+                '../static/image/Snowflake.png',
+                '../static/image/Snowflake.png',
+                '../static/image/Snowflake.png'
+            ],
+            totalFlakes: '100',
+            zIndex: '999999',
+            maxSize: '30',
+            maxDuration: '20',
+            useFlakeTrans: false
+        });
+    });
+</script>

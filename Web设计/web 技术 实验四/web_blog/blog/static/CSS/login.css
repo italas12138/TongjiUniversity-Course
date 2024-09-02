@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    background-image: url(/static/image/background.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+}
+.loginfrom{
+    position: absolute;
+    left:35%;
+    top: 15%;
+    height: 540px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    background-image: linear-gradient(135deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+.loginput{
+    margin-left: 105px;
+    margin-top: 40px;
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(155, 89, 182, 0.7); ;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+.loginput:focus::placeholder{
+    opacity: 0;
+}
+.logbutton {
+    color: #372527;
+    width:150px;
+    height: 50px;
+    background: #a8edea ;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin-left: 150px;
+    margin-top: 30px;
+    letter-spacing: 0.05em;
+}
+.logbutton:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+.logbutton a{
+    text-decoration: none;
+    color: black;
+}

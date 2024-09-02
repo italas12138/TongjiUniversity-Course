@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Sep 09 16:08:44 2023
+# Process ID: 31224
+# Current directory: D:/CPU_MIPS_54_post/CPU_MIPS_54_post.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: D:/CPU_MIPS_54_post/CPU_MIPS_54_post.runs/synth_1/sccomp_dataflow.vds
+# Journal file: D:/CPU_MIPS_54_post/CPU_MIPS_54_post.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace

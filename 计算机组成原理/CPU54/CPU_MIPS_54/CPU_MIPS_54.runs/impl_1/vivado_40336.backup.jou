@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Sep 09 16:03:30 2023
+# Process ID: 40336
+# Current directory: D:/CPU_MIPS_54/CPU_MIPS_54.runs/impl_1
+# Command line: vivado.exe -log sccomp_dataflow.vdi -applog -messageDb vivado.pb -mode batch -source sccomp_dataflow.tcl -notrace
+# Log file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/impl_1/sccomp_dataflow.vdi
+# Journal file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace

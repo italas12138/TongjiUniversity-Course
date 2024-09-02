@@ -1,0 +1,115 @@
+<!-- <%-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> --%> -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="images/x-icon" href="images/title.ico">
+<title>笑话大全</title>
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/joke.css" rel="stylesheet" />
+<link href="css/iconfont.css" rel="stylesheet" />
+<script src="js/adaptation.js"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+	        <span style="position:absolute;left:10px;" onclick='window.location.href="./index.html"'><i class="iconfont icon-fanhui1" style="font-size:20px;"></i></span>
+	        <p class="title">笑话大全</p>
+	    </div>
+	    <div class="box">
+	    	<ul>
+	    	</ul>
+	    </div>
+	    <p class="bottom_bar"><span style="cursor:pointer;" onclick="update('prev')">上一页</span><span style="cursor:pointer;" onclick="update('next')">下一页</span></p>
+	</div>
+	<script type="text/javascript">
+	var joke_title;
+	var page = 1;
+	init(page);
+	function init(page){
+		$.ajax({
+		    type: 'post',
+		    url: 'http://route.showapi.com/341-1',
+		    dataType: 'json',
+		    data: {
+		        "showapi_timestamp": formatterDateTime(),
+		        "showapi_appid": '95737', //这里需要改成自己的appid
+		        "showapi_sign": '02474aab02014642ab1b86b7130bc673',  //这里需要改成自己的应用的密钥secret
+		        "page":page,
+		        "maxResult":"20"
+		    },
+		
+		    error: function(XmlHttpRequest, textStatus, errorThrown) {
+		        alert("操作失败!");
+		    },
+		    success: function(result) {
+		    	document.getElementsByTagName("ul")[0].innerHTML = "";
+		    	var str = "";
+		    	var list = result.showapi_res_body.contentlist;
+		    	for(var i=0,len=list.length;i<len;i++){
+		    		str += '<li class="li"><h4 class="joke_title"><span>'+list[i].title+'</span><span>'+list[i].ct.split(".")[0]+'</span></h4><p style="text-indent:2em;font-size:14px;color:#666;padding:5px;">'+list[i].text+'</p></li>';
+		    	}
+		    	document.getElementsByTagName("ul")[0].innerHTML = str;
+		    	joke_title = document.getElementsByTagName("li");
+		        console.log(result) //console变量在ie低版本下不能用
+		        for (var i=0,len=joke_title.length;i<len;i++) {
+		    		joke_title[i].onclick = function(){
+		    			console.log(this);
+		    			this.classList.toggle("show");
+		    		}
+		    	}
+		    }
+		});
+	}
+	
+	function update(str){
+		if (str === "next") {
+			page += 1;
+		} else {
+			if (page > 1){
+				page -= 1;
+			}else{
+				page = 1;
+			}
+		}
+		init(page);
+	}
+	function formatterDateTime() {
+		    var date=new Date()
+		    var month=date.getMonth() + 1
+	        var datetime = date.getFullYear()
+	                + ""// "年"
+	                + (month >= 10 ? month : "0"+ month)
+	                + ""// "月"
+	                + (date.getDate() < 10 ? "0" + date.getDate() : date
+	                        .getDate())
+	                + ""
+	                + (date.getHours() < 10 ? "0" + date.getHours() : date
+	                        .getHours())
+	                + ""
+	                + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date
+	                        .getMinutes())
+	                + ""
+	                + (date.getSeconds() < 10 ? "0" + date.getSeconds() : date
+	                        .getSeconds());
+	        return datetime;
+	    }
+	//获取类名
+    function getClass(cName){
+      if(window.getElementsByClassName){
+        return document.getElementsByClassName("cName");
+      }else{
+        var arr = [];
+        var all = document.getElementsByTagName("*");
+        for(var i=0;i<all.length;i++){
+          if(cName==all[i].className){
+            arr.push(all[i]);
+          }
+        }
+        return arr;
+      }
+    }
+	</script>
+</body>
+</html>

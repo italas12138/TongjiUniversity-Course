@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="2340" viewBox="0 0 1080 2340">
+  <defs>
+    <filter id="登录" x="51" y="928" width="979" height="132" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="占空矩形" x="11" y="381.563" width="1056" height="515.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="962.5" height="217" fill="none"/>
+    </clipPath>
+    <filter id="头部背景" x="-9" y="-6" width="1098" height="359.376" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-登陆">
+      <rect width="1080" height="2340"/>
+    </clipPath>
+  </defs>
+  <g id="登陆" clip-path="url(#clip-登陆)">
+    <rect width="1080" height="2340" fill="#fff"/>
+    <rect id="背景色" width="1080" height="2340" fill="#eee"/>
+    <g id="登录按钮" transform="translate(0 5)">
+      <g transform="matrix(1, 0, 0, 1, 0, -5)" filter="url(#登录)">
+        <rect id="登录-2" data-name="登录" width="961" height="114" rx="10" transform="translate(60 934)" fill="#0288d1"/>
+      </g>
+      <text id="登录账号" transform="translate(497 1005)" fill="#fff" font-size="44" font-family="SourceHanSansSC-Regular, Source Han Sans SC"><tspan x="0" y="0">登录</tspan></text>
+    </g>
+    <g id="信息填写">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#占空矩形)">
+        <path id="占空矩形-2" data-name="占空矩形" d="M4,0H1034c2.209,0,4,2.067,4,4.616V492.783c0,2.549-1.791,4.616-4,4.616H4c-2.209,0-4-2.067-4-4.616V4.616C0,2.067,1.791,0,4,0Z" transform="translate(20 387.56)" fill="#fff"/>
+      </g>
+      <g id="手机号验证码" transform="translate(57 548)" clip-path="url(#clip-path)">
+        <g id="手机号" transform="translate(-57 -548)">
+          <line id="手机号-2" data-name="手机号" x2="962" transform="translate(57.5 624.5)" fill="none" stroke="#707070" stroke-width="1"/>
+          <text id="手机号-3" data-name="手机号" transform="translate(57 571)" fill="#0288d1" font-size="20" font-family="SourceHanSansSC-Light, Source Han Sans SC" font-weight="300"><tspan x="0" y="0">手机号:</tspan></text>
+        </g>
+        <g id="手机号-4" data-name="手机号" transform="translate(-57 -420)">
+          <line id="手机号-5" data-name="手机号" x2="962" transform="translate(57.5 624.5)" fill="none" stroke="#707070" stroke-width="1"/>
+          <text id="手机号-6" data-name="手机号" transform="translate(57 571)" fill="#0288d1" font-size="20" font-family="SourceHanSansSC-Light, Source Han Sans SC" font-weight="300"><tspan x="0" y="0" xml:space="preserve">  </tspan></text>
+        </g>
+      </g>
+      <text id="账号密码登录" transform="translate(871 827)" fill="#0288d1" font-size="24" font-family="SourceHanSansSC-Normal, Source Han Sans SC"><tspan x="0" y="0">账号密码登录</tspan></text>
+      <text id="获取验证码" transform="translate(895 733)" fill="#0288d1" font-size="24" font-family="SourceHanSansSC-Normal, Source Han Sans SC"><tspan x="0" y="0">获取验证码</tspan></text>
+      <text id="验证码" transform="translate(57 733)" fill="#757575" font-size="24" font-family="SourceHanSansSC-Light, Source Han Sans SC" font-weight="300"><tspan x="0" y="0">验证码</tspan></text>
+      <text id="登录账号-2" data-name="登录账号" transform="translate(57 476)" fill="#0288d1" font-size="44" font-family="SourceHanSansSC-Regular, Source Han Sans SC"><tspan x="0" y="0">登录账号</tspan></text>
+    </g>
+    <g id="头部">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#头部背景)">
+        <rect id="头部背景-2" data-name="头部背景" width="1080" height="341.376" fill="#0288d1"/>
+      </g>
+      <g id="头部分类">
+        <text id="登_录" data-name="登 录" transform="translate(261 290)" fill="#fff" font-size="33" font-family="SourceHanSansSC-Normal, Source Han Sans SC"><tspan x="-36.68" y="0">登 录</tspan></text>
+        <text id="注_册" data-name="注 册" transform="translate(820 290)" fill="#fff" font-size="33" font-family="SourceHanSansSC-Normal, Source Han Sans SC"><tspan x="-36.68" y="0">注 册</tspan></text>
+        <rect id="头部类别选择条" width="503" height="5" transform="translate(20 332)" fill="#fff"/>
+      </g>
+      <g id="按钮">
+        <path id="返回键" d="M57.72,27.5H16.758L35.56,8.7,30.86,4,4,30.86,30.86,57.72l4.7-4.7-18.8-18.8H57.72V27.5Z" transform="translate(50 135)" fill="#fff" fill-rule="evenodd"/>
+      </g>
+      <text id="title" transform="translate(162 178)" fill="#fff" font-size="40" font-family="SourceHanSansSC-Regular, Source Han Sans SC"><tspan x="0" y="0">Welcome</tspan></text>
+    </g>
+    <g id="状态栏">
+      <rect id="矩形_1" data-name="矩形 1" width="1080" height="83" fill="none"/>
+      <text id="_13:00" data-name="13:00" transform="translate(56 61)" fill="#fff" font-size="32" font-family="MI LANTING--GBK1-Light, MI LANTING" font-weight="300"><tspan x="0" y="0">13:00</tspan></text>
+      <path id="蓝牙" d="M275.125,118.3l0,0-7.473-6.4,7.473-6.4,0,0a1.207,1.207,0,0,0,0-1.848l0,0-8.555-7.333,0,0a1.216,1.216,0,0,0-2.014.924v12.009l-6.538-5.6,0,0a1.217,1.217,0,1,0-1.584,1.848l0,0,7.473,6.4-7.473,6.4,0,0a1.217,1.217,0,1,0,1.584,1.848l0,0,6.538-5.6v12.009a1.216,1.216,0,0,0,2.014.924l0,0,8.555-7.333,0,0a1.207,1.207,0,0,0,0-1.848Zm-2.67.924L267,123.9v-9.351ZM267,109.231V99.88l5.455,4.676Z" transform="translate(584.445 -61.777)" fill="#fff"/>
+      <path id="wifi" d="M26.549,152.3a12.731,12.731,0,0,0-16.707,0,.322.322,0,0,0-.032.445l1.432,1.706a.321.321,0,0,0,.453.036,9.86,9.86,0,0,1,13,0,.321.321,0,0,0,.453-.036l1.432-1.706a.319.319,0,0,0-.036-.445Zm4.669-5.572a20.361,20.361,0,0,0-26.044,0,.32.32,0,0,0-.04.449l1.432,1.706a.316.316,0,0,0,.445.04,17.5,17.5,0,0,1,22.37,0,.316.316,0,0,0,.445-.04l1.432-1.706a.32.32,0,0,0-.04-.449Zm4.641-5.528a28,28,0,0,0-35.386-.08.318.318,0,0,0-.044.453l1.432,1.706a.319.319,0,0,0,.441.044,25.134,25.134,0,0,1,31.723.076.316.316,0,0,0,.445-.044l1.432-1.706a.314.314,0,0,0-.044-.449ZM15.613,158.559a2.545,2.545,0,1,0,2.545-2.545A2.545,2.545,0,0,0,15.613,158.559Z" transform="translate(924.888 -98.204)" fill="#fff"/>
+      <g id="信号" transform="translate(878.547 35.391)">
+        <path id="路径_1" data-name="路径 1" d="M0,727.579H4.768v7.493H0Z" transform="translate(0 -709.188)" fill="#fff"/>
+        <path id="路径_2" data-name="路径 2" d="M269.474,565.9h4.768v11.58h-4.768Z" transform="translate(-262.662 -551.591)" fill="#fff"/>
+        <path id="路径_3" data-name="路径 3" d="M565.9,377.263h4.087v16.348H565.9Z" transform="translate(-551.591 -367.727)" fill="#fff"/>
+        <path id="路径_4" data-name="路径 4" d="M835.368,188.632h4.768v21.116h-4.768Z" transform="translate(-814.252 -183.864)" fill="#fff"/>
+        <path id="路径_5" data-name="路径 5" d="M1104.84,0h4.768V25.884h-4.768Z" transform="translate(-1076.913)" fill="#fff"/>
+      </g>
+      <path id="电池" d="M90.758,265.16v-4.58a4.594,4.594,0,0,0-4.58-4.58H47.247a4.594,4.594,0,0,0-4.58,4.58V278.9a4.594,4.594,0,0,0,4.58,4.58H86.178a4.594,4.594,0,0,0,4.58-4.58v-4.58a2.3,2.3,0,0,0,2.29-2.29v-4.58A2.3,2.3,0,0,0,90.758,265.16Zm-2.29,2.29V278.9a2.3,2.3,0,0,1-2.29,2.29H47.247a2.3,2.3,0,0,1-2.29-2.29V260.58a2.3,2.3,0,0,1,2.29-2.29H86.178a2.3,2.3,0,0,1,2.29,2.29ZM47.247,278.9H77.017V260.58H47.247Z" transform="translate(932.364 -219.347)" fill="#fff"/>
+      <g id="闹钟" transform="translate(58.835 -27.809)">
+        <path id="路径_6" data-name="路径 6" d="M490.412,255.884h-4.99v-8.021a.063.063,0,0,0-.063-.063h-1.9a.063.063,0,0,0-.063.063v9.977a.063.063,0,0,0,.063.063h6.946a.063.063,0,0,0,.063-.063v-1.9A.058.058,0,0,0,490.412,255.884Z" transform="translate(-378.163 -178.814)" fill="#fff"/>
+        <path id="路径_7" data-name="路径 7" d="M115.292,87.407a13.109,13.109,0,0,0,1.3-17.337,4.041,4.041,0,1,0-6.52-4.6,13.133,13.133,0,0,0-7.88,0,4.041,4.041,0,1,0-6.52,4.6,13.111,13.111,0,0,0,.871,16.9l-2.921,2.921a.061.061,0,0,0,0,.088l1.342,1.342a.061.061,0,0,0,.088,0l2.984-2.984a13.108,13.108,0,0,0,15.7.37l2.611,2.611a.061.061,0,0,0,.088,0l1.342-1.342a.061.061,0,0,0,0-.088Zm-1.583-22.189a2.021,2.021,0,0,1,1.536,3.335,13.187,13.187,0,0,0-3.288-2.319A2.012,2.012,0,0,1,113.709,65.219Zm-15.152,0a2.018,2.018,0,0,1,1.752,1.012,13.187,13.187,0,0,0-3.288,2.319,2.018,2.018,0,0,1,1.536-3.332ZM95.022,78a11.112,11.112,0,1,1,11.112,11.112A11.123,11.123,0,0,1,95.022,78Z" fill="#fff"/>
+      </g>
+      <text id="_2.4M_s" data-name="2.4M/s" transform="translate(219 60)" fill="#fff" font-size="30" font-family="MI LANTING--GBK1-Light, MI LANTING" font-weight="300"><tspan x="0" y="0">2.4M/s</tspan></text>
+    </g>
+  </g>
+</svg>

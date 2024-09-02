@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-1</title>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='1-style.css' )}}">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='common.css' )}}">
+</head>
+
+<body>
+    <div class="background">
+        <!-- 标题 -->
+        <div class="header1-background">
+            <h1 class="head-title">{{detail.title}}</h1>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="main-content">
+            <!-- 配图 -->
+            <div class="imagestyle">
+                <img src="{{url_for('static', filename=detail.img )}}" title="{{detail.b_id}}" class="imagescale">
+            </div>
+
+            <!-- 介绍 -->
+            <div class="textstyle">
+                <p>
+                    {{detail.content}}
+                </p>
+
+                <div class="appoint">
+                    <a href="{{ url_for('isgive',b_id=detail.b_id,count=detail.count)}}">
+
+                        {% if detail.isgive %}
+                        <img src="{{url_for('static', filename='image/2.png' )}}" />
+                        {% else %}
+                        <img src="{{url_for('static', filename='image/1.png' )}}" />
+                        {% endif %}
+                    </a>
+
+
+                    <span>{{detail.count}}</span>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- 底部导航栏 -->
+        <div class="sub-buttom-nav">
+            <h4>----感谢观看，<a href="{{ url_for('blogs') }}">请点击此处返回</a>----</h4>
+        </div>
+
+</body>
+
+</html>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.8.3.js' )}}"></script>

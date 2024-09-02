@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Jul 14 19:44:38 2023
+# Process ID: 295356
+# Current directory: D:/CPU_MIPS_54/CPU_MIPS_54.runs/dist_mem_gen_0_synth_1
+# Command line: vivado.exe -log dist_mem_gen_0.vds -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_0.tcl
+# Log file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/dist_mem_gen_0_synth_1/dist_mem_gen_0.vds
+# Journal file: D:/CPU_MIPS_54/CPU_MIPS_54.runs/dist_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dist_mem_gen_0.tcl -notrace
